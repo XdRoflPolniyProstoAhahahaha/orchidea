@@ -105,6 +105,7 @@ local UICorner_32 = Instance.new("UICorner")
 orchideaV13.Name = "orchideaV1.3"
 orchideaV13.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 orchideaV13.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+orchideaV13.ResetOnSpawn = false
 
 alo.Name = "alo"
 alo.Parent = orchideaV13
@@ -1022,7 +1023,7 @@ local esp_cfg = {
 	tracersEsp = {
 		Enabled = false,
 		Transparency = 0,
-		Color = Color3.fromRGB(255,255,255),
+		Color = Color3.fromRGB(155, 54, 145),
 		Thickness = 2
 	},
 }
@@ -1268,7 +1269,7 @@ function tracers_function()
 	end
 end
 
--// ================== UTILS ==================
+--// ================== UTILS ==================
 function LPH_NO_VIRTUALIZE(f) return f end
 
 local RainbowSpeed = 0.25

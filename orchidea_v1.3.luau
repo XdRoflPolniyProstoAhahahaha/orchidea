@@ -1,1681 +1,1744 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local orchideaV13 = Instance.new("ScreenGui")
-local alo = Instance.new("TextLabel")
-local background = Instance.new("Frame")
-local hueta_kakayata = Instance.new("Frame")
-local legitbot_btn = Instance.new("TextButton")
-local legitbot_highlight_button = Instance.new("Frame")
-local misc_btn = Instance.new("TextButton")
-local misc_highlight_button = Instance.new("Frame")
-local visuals_btn = Instance.new("TextButton")
-local visuals_highlight_button = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local luascripts = Instance.new("TextBox")
-local misc_section = Instance.new("Frame")
-local player_welcome = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
-local curr_executor = Instance.new("TextLabel")
-local misc_fem = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local customfov_lbl = Instance.new("TextLabel")
-local custom_fov_button = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local customfov_frame_knopka = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local fly_lbl = Instance.new("TextLabel")
-local fly_button = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local fly_frame_knopka = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local third_person_lbl = Instance.new("TextLabel")
-local third_person_button = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local third_frame_knopka = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local auto_collect_lbl = Instance.new("TextLabel")
-local auto_collect_button = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local auto_coll_frame_knopka = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
-local spinbot_lbl = Instance.new("TextLabel")
-local spinbot_button = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local spinbot_frame_knopka = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
-local hitsound_lbl = Instance.new("TextLabel")
-local hitsound_button = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local hitsound_frame_knopka = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local visuals_section = Instance.new("Frame")
-local misc_fem_2 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
-local box_esp_lbl = Instance.new("TextLabel")
-local box_esp_button = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
-local box_esp_frame_knopka = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local tracer_esp_lbl = Instance.new("TextLabel")
-local tracer_esp_button = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
-local tracer_esp_frame_knopka = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
-local hpbar_esp_lbl = Instance.new("TextLabel")
-local hpbar_esp_button = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
-local hpbar_esp_frame_knopka = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
-local nickname_esp_lbl = Instance.new("TextLabel")
-local nickname_esp_button = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
-local nickname_esp_frame_knopka = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
-local champs_esp_lbl = Instance.new("TextLabel")
-local champs_esp_button = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
-local champs_esp_frame_knopka = Instance.new("Frame")
-local UICorner_24 = Instance.new("UICorner")
-local legitbot_section = Instance.new("Frame")
-local misc_fem_3 = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
-local aimbot_lbl = Instance.new("TextLabel")
-local aimbot_button = Instance.new("TextButton")
-local UICorner_26 = Instance.new("UICorner")
-local aimbot_frame_knopka = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
-local no_spread_lbl = Instance.new("TextLabel")
-local no_spread_button = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
-local no_spread_frame_knopka = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
-local misc_fem_4 = Instance.new("Frame")
-local UICorner_30 = Instance.new("UICorner")
-local triggerbot_lbl = Instance.new("TextLabel")
-local triggerbot_button = Instance.new("TextButton")
-local UICorner_31 = Instance.new("UICorner")
-local triggerbot_frame_knopka = Instance.new("Frame")
-local UICorner_32 = Instance.new("UICorner")
-
---Properties:
-
-orchideaV13.Name = "orchideaV1.3"
-orchideaV13.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-orchideaV13.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-orchideaV13.ResetOnSpawn = false
-
-alo.Name = "alo"
-alo.Parent = orchideaV13
-alo.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
-alo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-alo.BorderSizePixel = 0
-alo.Position = UDim2.new(0.286272496, 0, 0.296137333, 0)
-alo.Size = UDim2.new(0, 574, 0, 36)
-alo.Font = Enum.Font.Nunito
-alo.Text = "  orchidea"
-alo.TextColor3 = Color3.fromRGB(124, 124, 124)
-alo.TextSize = 33.000
-alo.TextXAlignment = Enum.TextXAlignment.Left
-
-background.Name = "background"
-background.Parent = alo
-background.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-background.BorderColor3 = Color3.fromRGB(0, 0, 0)
-background.BorderSizePixel = 0
-background.Position = UDim2.new(0.283972114, 0, 1, 0)
-background.Size = UDim2.new(0, 411, 0, 332)
-
-hueta_kakayata.Name = "hueta_kakayata"
-hueta_kakayata.Parent = alo
-hueta_kakayata.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
-hueta_kakayata.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hueta_kakayata.BorderSizePixel = 0
-hueta_kakayata.Position = UDim2.new(0, 0, 1, 0)
-hueta_kakayata.Size = UDim2.new(0, 162, 0, 332)
-
-legitbot_btn.Name = "legitbot_btn"
-legitbot_btn.Parent = hueta_kakayata
-legitbot_btn.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
-legitbot_btn.BorderColor3 = Color3.fromRGB(0, 0, 0)
-legitbot_btn.BorderSizePixel = 0
-legitbot_btn.Position = UDim2.new(1.0038271, 0, 0, 0)
-legitbot_btn.Size = UDim2.new(0, 138, 0, 24)
-legitbot_btn.Font = Enum.Font.Code
-legitbot_btn.Text = "LegitBot"
-legitbot_btn.TextColor3 = Color3.fromRGB(149, 149, 149)
-legitbot_btn.TextSize = 18.000
-
-legitbot_highlight_button.Name = "legitbot_highlight_button"
-legitbot_highlight_button.Parent = legitbot_btn
-legitbot_highlight_button.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
-legitbot_highlight_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-legitbot_highlight_button.BorderSizePixel = 0
-legitbot_highlight_button.Position = UDim2.new(0.158017814, 0, 0, 0)
-legitbot_highlight_button.Size = UDim2.new(0, 92, 0, 1)
-legitbot_highlight_button.Visible = false
-
-misc_btn.Name = "misc_btn"
-misc_btn.Parent = hueta_kakayata
-misc_btn.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-misc_btn.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_btn.BorderSizePixel = 0
-misc_btn.Position = UDim2.new(2.68901277, 0, 0, 0)
-misc_btn.Size = UDim2.new(0, 138, 0, 24)
-misc_btn.Font = Enum.Font.Code
-misc_btn.Text = "Misc"
-misc_btn.TextColor3 = Color3.fromRGB(149, 149, 149)
-misc_btn.TextSize = 18.000
-
-misc_highlight_button.Name = "misc_highlight_button"
-misc_highlight_button.Parent = misc_btn
-misc_highlight_button.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
-misc_highlight_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_highlight_button.BorderSizePixel = 0
-misc_highlight_button.Position = UDim2.new(0.165264189, 0, 0, 0)
-misc_highlight_button.Size = UDim2.new(0, 92, 0, 1)
-
-visuals_btn.Name = "visuals_btn"
-visuals_btn.Parent = hueta_kakayata
-visuals_btn.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
-visuals_btn.BorderColor3 = Color3.fromRGB(0, 0, 0)
-visuals_btn.BorderSizePixel = 0
-visuals_btn.Position = UDim2.new(1.85567904, 0, 0, 0)
-visuals_btn.Size = UDim2.new(0, 138, 0, 24)
-visuals_btn.Font = Enum.Font.Code
-visuals_btn.Text = "Visuals"
-visuals_btn.TextColor3 = Color3.fromRGB(149, 149, 149)
-visuals_btn.TextSize = 18.000
-
-visuals_highlight_button.Name = "visuals_highlight_button"
-visuals_highlight_button.Parent = visuals_btn
-visuals_highlight_button.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
-visuals_highlight_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-visuals_highlight_button.BorderSizePixel = 0
-visuals_highlight_button.Position = UDim2.new(0.158017814, 0, 0, 0)
-visuals_highlight_button.Size = UDim2.new(0, 92, 0, -1)
-visuals_highlight_button.Visible = false
-
-TextLabel.Parent = hueta_kakayata
-TextLabel.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 162, 0, 24)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "version 1.3                   "
-TextLabel.TextColor3 = Color3.fromRGB(91, 91, 91)
-TextLabel.TextSize = 19.000
-
-luascripts.Name = "luascripts"
-luascripts.Parent = alo
-luascripts.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-luascripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
-luascripts.BorderSizePixel = 0
-luascripts.Position = UDim2.new(0, 0, 8.52777767, 0)
-luascripts.Size = UDim2.new(0, 162, 0, 60)
-luascripts.Font = Enum.Font.SourceSans
-luascripts.PlaceholderColor3 = Color3.fromRGB(25, 25, 25)
-luascripts.PlaceholderText = "luau script here"
-luascripts.Text = ""
-luascripts.TextColor3 = Color3.fromRGB(47, 47, 47)
-luascripts.TextScaled = true
-luascripts.TextSize = 22.000
-luascripts.TextWrapped = true
-
-misc_section.Name = "misc_section"
-misc_section.Parent = alo
-misc_section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-misc_section.BackgroundTransparency = 1.000
-misc_section.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_section.BorderSizePixel = 0
-misc_section.Position = UDim2.new(0.283972114, 0, 1.66666663, 0)
-misc_section.Size = UDim2.new(0, 411, 0, 307)
-
-player_welcome.Name = "player_welcome"
-player_welcome.Parent = misc_section
-player_welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-player_welcome.BackgroundTransparency = 1.000
-player_welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
-player_welcome.BorderSizePixel = 0
-player_welcome.Position = UDim2.new(0.703163028, 0, 0.0684039071, 0)
-player_welcome.Size = UDim2.new(0, 103, 0, 53)
-player_welcome.Font = Enum.Font.SourceSans
-player_welcome.Text = "welcome alo_yebishe!"
-player_welcome.TextColor3 = Color3.fromRGB(124, 124, 124)
-player_welcome.TextScaled = true
-player_welcome.TextSize = 1.000
-player_welcome.TextWrapped = true
-
-ImageLabel.Parent = player_welcome
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 1.000
-ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(-0.577176273, 0, 0, 0)
-ImageLabel.Size = UDim2.new(0, 55, 0, 55)
-ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-curr_executor.Name = "curr_executor"
-curr_executor.Parent = misc_section
-curr_executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-curr_executor.BackgroundTransparency = 1.000
-curr_executor.BorderColor3 = Color3.fromRGB(0, 0, 0)
-curr_executor.BorderSizePixel = 0
-curr_executor.Position = UDim2.new(0.560950935, 0, 0.302931607, 0)
-curr_executor.Size = UDim2.new(0, 161, 0, 26)
-curr_executor.Font = Enum.Font.SourceSans
-curr_executor.Text = "executorr"
-curr_executor.TextColor3 = Color3.fromRGB(124, 124, 124)
-curr_executor.TextScaled = true
-curr_executor.TextSize = 1.000
-curr_executor.TextWrapped = true
-
-misc_fem.Name = "misc_fem"
-misc_fem.Parent = misc_section
-misc_fem.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
-misc_fem.BackgroundTransparency = 0.980
-misc_fem.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_fem.BorderSizePixel = 0
-misc_fem.Position = UDim2.new(0.0510944463, 0, 0.0651465803, 0)
-misc_fem.Size = UDim2.new(0, 173, 0, 266)
-
-UICorner.CornerRadius = UDim.new(0, 6)
-UICorner.Parent = misc_fem
-
-customfov_lbl.Name = "customfov_lbl"
-customfov_lbl.Parent = misc_fem
-customfov_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-customfov_lbl.BackgroundTransparency = 1.000
-customfov_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-customfov_lbl.BorderSizePixel = 0
-customfov_lbl.Position = UDim2.new(0, 0, 0.0488721803, 0)
-customfov_lbl.Size = UDim2.new(0, 84, 0, 14)
-customfov_lbl.Font = Enum.Font.Code
-customfov_lbl.Text = " Custom FOV"
-customfov_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-customfov_lbl.TextScaled = true
-customfov_lbl.TextSize = 27.000
-customfov_lbl.TextWrapped = true
-
-custom_fov_button.Name = "custom_fov_button"
-custom_fov_button.Parent = customfov_lbl
-custom_fov_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-custom_fov_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-custom_fov_button.BorderSizePixel = 0
-custom_fov_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-custom_fov_button.Size = UDim2.new(0, 36, 0, 19)
-custom_fov_button.Font = Enum.Font.SourceSans
-custom_fov_button.Text = ""
-custom_fov_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-custom_fov_button.TextSize = 14.000
-
-UICorner_2.CornerRadius = UDim.new(0, 10000)
-UICorner_2.Parent = custom_fov_button
-
-customfov_frame_knopka.Name = "customfov_frame_knopka"
-customfov_frame_knopka.Parent = custom_fov_button
-customfov_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-customfov_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-customfov_frame_knopka.BorderSizePixel = 0
-customfov_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-customfov_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_3.CornerRadius = UDim.new(0, 100)
-UICorner_3.Parent = customfov_frame_knopka
-
-fly_lbl.Name = "fly_lbl"
-fly_lbl.Parent = misc_fem
-fly_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-fly_lbl.BackgroundTransparency = 1.000
-fly_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fly_lbl.BorderSizePixel = 0
-fly_lbl.Position = UDim2.new(0, 0, 0.191729322, 0)
-fly_lbl.Size = UDim2.new(0, 84, 0, 14)
-fly_lbl.Font = Enum.Font.Code
-fly_lbl.Text = "Fly"
-fly_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-fly_lbl.TextScaled = true
-fly_lbl.TextSize = 27.000
-fly_lbl.TextWrapped = true
-
-fly_button.Name = "fly_button"
-fly_button.Parent = fly_lbl
-fly_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-fly_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fly_button.BorderSizePixel = 0
-fly_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-fly_button.Size = UDim2.new(0, 36, 0, 19)
-fly_button.Font = Enum.Font.SourceSans
-fly_button.Text = ""
-fly_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-fly_button.TextSize = 14.000
-
-UICorner_4.CornerRadius = UDim.new(0, 10000)
-UICorner_4.Parent = fly_button
-
-fly_frame_knopka.Name = "fly_frame_knopka"
-fly_frame_knopka.Parent = fly_button
-fly_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-fly_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fly_frame_knopka.BorderSizePixel = 0
-fly_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-fly_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_5.CornerRadius = UDim.new(0, 100)
-UICorner_5.Parent = fly_frame_knopka
-
-third_person_lbl.Name = "third_person_lbl"
-third_person_lbl.Parent = misc_fem
-third_person_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-third_person_lbl.BackgroundTransparency = 1.000
-third_person_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-third_person_lbl.BorderSizePixel = 0
-third_person_lbl.Position = UDim2.new(0, 0, 0.357142866, 0)
-third_person_lbl.Size = UDim2.new(0, 84, 0, 14)
-third_person_lbl.Font = Enum.Font.Code
-third_person_lbl.Text = "  Third Person"
-third_person_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-third_person_lbl.TextScaled = true
-third_person_lbl.TextSize = 27.000
-third_person_lbl.TextWrapped = true
-
-third_person_button.Name = "third_person_button"
-third_person_button.Parent = third_person_lbl
-third_person_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-third_person_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-third_person_button.BorderSizePixel = 0
-third_person_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-third_person_button.Size = UDim2.new(0, 36, 0, 19)
-third_person_button.Font = Enum.Font.SourceSans
-third_person_button.Text = ""
-third_person_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-third_person_button.TextSize = 14.000
-
-UICorner_6.CornerRadius = UDim.new(0, 10000)
-UICorner_6.Parent = third_person_button
-
-third_frame_knopka.Name = "third_frame_knopka"
-third_frame_knopka.Parent = third_person_button
-third_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-third_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-third_frame_knopka.BorderSizePixel = 0
-third_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-third_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_7.CornerRadius = UDim.new(0, 100)
-UICorner_7.Parent = third_frame_knopka
-
-auto_collect_lbl.Name = "auto_collect_lbl"
-auto_collect_lbl.Parent = misc_fem
-auto_collect_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-auto_collect_lbl.BackgroundTransparency = 1.000
-auto_collect_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-auto_collect_lbl.BorderSizePixel = 0
-auto_collect_lbl.Position = UDim2.new(0, 0, 0.503759384, 0)
-auto_collect_lbl.Size = UDim2.new(0, 106, 0, 14)
-auto_collect_lbl.Font = Enum.Font.Code
-auto_collect_lbl.Text = " Auto money collect"
-auto_collect_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-auto_collect_lbl.TextScaled = true
-auto_collect_lbl.TextWrapped = true
-
-auto_collect_button.Name = "auto_collect_button"
-auto_collect_button.Parent = auto_collect_lbl
-auto_collect_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-auto_collect_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-auto_collect_button.BorderSizePixel = 0
-auto_collect_button.Position = UDim2.new(1.21516442, 0, 0, 0)
-auto_collect_button.Size = UDim2.new(0, 36, 0, 19)
-auto_collect_button.Font = Enum.Font.SourceSans
-auto_collect_button.Text = ""
-auto_collect_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-auto_collect_button.TextSize = 14.000
-
-UICorner_8.CornerRadius = UDim.new(0, 10000)
-UICorner_8.Parent = auto_collect_button
-
-auto_coll_frame_knopka.Name = "auto_coll_frame_knopka"
-auto_coll_frame_knopka.Parent = auto_collect_button
-auto_coll_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-auto_coll_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-auto_coll_frame_knopka.BorderSizePixel = 0
-auto_coll_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-auto_coll_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_9.CornerRadius = UDim.new(0, 100)
-UICorner_9.Parent = auto_coll_frame_knopka
-
-spinbot_lbl.Name = "spinbot_lbl"
-spinbot_lbl.Parent = misc_fem
-spinbot_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-spinbot_lbl.BackgroundTransparency = 1.000
-spinbot_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-spinbot_lbl.BorderSizePixel = 0
-spinbot_lbl.Position = UDim2.new(0, 0, 0.672932327, 0)
-spinbot_lbl.Size = UDim2.new(0, 84, 0, 14)
-spinbot_lbl.Font = Enum.Font.Code
-spinbot_lbl.Text = "SpinBot"
-spinbot_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-spinbot_lbl.TextScaled = true
-spinbot_lbl.TextSize = 27.000
-spinbot_lbl.TextWrapped = true
-
-spinbot_button.Name = "spinbot_button"
-spinbot_button.Parent = spinbot_lbl
-spinbot_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-spinbot_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-spinbot_button.BorderSizePixel = 0
-spinbot_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-spinbot_button.Size = UDim2.new(0, 36, 0, 19)
-spinbot_button.Font = Enum.Font.SourceSans
-spinbot_button.Text = ""
-spinbot_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-spinbot_button.TextSize = 14.000
-
-UICorner_10.CornerRadius = UDim.new(0, 10000)
-UICorner_10.Parent = spinbot_button
-
-spinbot_frame_knopka.Name = "spinbot_frame_knopka"
-spinbot_frame_knopka.Parent = spinbot_button
-spinbot_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-spinbot_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-spinbot_frame_knopka.BorderSizePixel = 0
-spinbot_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-spinbot_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_11.CornerRadius = UDim.new(0, 100)
-UICorner_11.Parent = spinbot_frame_knopka
-
-hitsound_lbl.Name = "hitsound_lbl"
-hitsound_lbl.Parent = misc_fem
-hitsound_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hitsound_lbl.BackgroundTransparency = 1.000
-hitsound_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hitsound_lbl.BorderSizePixel = 0
-hitsound_lbl.Position = UDim2.new(0, 0, 0.830827057, 0)
-hitsound_lbl.Size = UDim2.new(0, 128, 0, 14)
-hitsound_lbl.Font = Enum.Font.Code
-hitsound_lbl.Text = "Custom hitsound (rust)"
-hitsound_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-hitsound_lbl.TextScaled = true
-hitsound_lbl.TextSize = 27.000
-hitsound_lbl.TextWrapped = true
-
-hitsound_button.Name = "hitsound_button"
-hitsound_button.Parent = hitsound_lbl
-hitsound_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-hitsound_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hitsound_button.BorderSizePixel = 0
-hitsound_button.Position = UDim2.new(1.00446415, 0, -0.214285716, 0)
-hitsound_button.Size = UDim2.new(0, 36, 0, 19)
-hitsound_button.Font = Enum.Font.SourceSans
-hitsound_button.Text = ""
-hitsound_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-hitsound_button.TextSize = 14.000
-
-UICorner_12.CornerRadius = UDim.new(0, 10000)
-UICorner_12.Parent = hitsound_button
-
-hitsound_frame_knopka.Name = "hitsound_frame_knopka"
-hitsound_frame_knopka.Parent = hitsound_button
-hitsound_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hitsound_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hitsound_frame_knopka.BorderSizePixel = 0
-hitsound_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-hitsound_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_13.CornerRadius = UDim.new(0, 100)
-UICorner_13.Parent = hitsound_frame_knopka
-
-visuals_section.Name = "visuals_section"
-visuals_section.Parent = alo
-visuals_section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-visuals_section.BackgroundTransparency = 1.000
-visuals_section.BorderColor3 = Color3.fromRGB(0, 0, 0)
-visuals_section.BorderSizePixel = 0
-visuals_section.Position = UDim2.new(0.283972114, 0, 1.66666663, 0)
-visuals_section.Size = UDim2.new(0, 411, 0, 307)
-visuals_section.Visible = false
-
-misc_fem_2.Name = "misc_fem"
-misc_fem_2.Parent = visuals_section
-misc_fem_2.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
-misc_fem_2.BackgroundTransparency = 0.980
-misc_fem_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_fem_2.BorderSizePixel = 0
-misc_fem_2.Position = UDim2.new(0.0510944463, 0, 0.0651465803, 0)
-misc_fem_2.Size = UDim2.new(0, 173, 0, 266)
-
-UICorner_14.CornerRadius = UDim.new(0, 6)
-UICorner_14.Parent = misc_fem_2
-
-box_esp_lbl.Name = "box_esp_lbl"
-box_esp_lbl.Parent = misc_fem_2
-box_esp_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-box_esp_lbl.BackgroundTransparency = 1.000
-box_esp_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-box_esp_lbl.BorderSizePixel = 0
-box_esp_lbl.Position = UDim2.new(0, 0, 0.0488721803, 0)
-box_esp_lbl.Size = UDim2.new(0, 84, 0, 14)
-box_esp_lbl.Font = Enum.Font.Code
-box_esp_lbl.Text = "Esp Box"
-box_esp_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-box_esp_lbl.TextScaled = true
-box_esp_lbl.TextSize = 27.000
-box_esp_lbl.TextWrapped = true
-
-box_esp_button.Name = "box_esp_button"
-box_esp_button.Parent = box_esp_lbl
-box_esp_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-box_esp_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-box_esp_button.BorderSizePixel = 0
-box_esp_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-box_esp_button.Size = UDim2.new(0, 36, 0, 19)
-box_esp_button.Font = Enum.Font.SourceSans
-box_esp_button.Text = ""
-box_esp_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-box_esp_button.TextSize = 14.000
-
-UICorner_15.CornerRadius = UDim.new(0, 10000)
-UICorner_15.Parent = box_esp_button
-
-box_esp_frame_knopka.Name = "box_esp_frame_knopka"
-box_esp_frame_knopka.Parent = box_esp_button
-box_esp_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-box_esp_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-box_esp_frame_knopka.BorderSizePixel = 0
-box_esp_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-box_esp_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_16.CornerRadius = UDim.new(0, 100)
-UICorner_16.Parent = box_esp_frame_knopka
-
-tracer_esp_lbl.Name = "tracer_esp_lbl"
-tracer_esp_lbl.Parent = misc_fem_2
-tracer_esp_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tracer_esp_lbl.BackgroundTransparency = 1.000
-tracer_esp_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tracer_esp_lbl.BorderSizePixel = 0
-tracer_esp_lbl.Position = UDim2.new(0, 0, 0.180451125, 0)
-tracer_esp_lbl.Size = UDim2.new(0, 84, 0, 14)
-tracer_esp_lbl.Font = Enum.Font.Code
-tracer_esp_lbl.Text = "Tracers"
-tracer_esp_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-tracer_esp_lbl.TextScaled = true
-tracer_esp_lbl.TextSize = 27.000
-tracer_esp_lbl.TextWrapped = true
-
-tracer_esp_button.Name = "tracer_esp_button"
-tracer_esp_button.Parent = tracer_esp_lbl
-tracer_esp_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-tracer_esp_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tracer_esp_button.BorderSizePixel = 0
-tracer_esp_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-tracer_esp_button.Size = UDim2.new(0, 36, 0, 19)
-tracer_esp_button.Font = Enum.Font.SourceSans
-tracer_esp_button.Text = ""
-tracer_esp_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-tracer_esp_button.TextSize = 14.000
-
-UICorner_17.CornerRadius = UDim.new(0, 10000)
-UICorner_17.Parent = tracer_esp_button
-
-tracer_esp_frame_knopka.Name = "tracer_esp_frame_knopka"
-tracer_esp_frame_knopka.Parent = tracer_esp_button
-tracer_esp_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tracer_esp_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tracer_esp_frame_knopka.BorderSizePixel = 0
-tracer_esp_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-tracer_esp_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_18.CornerRadius = UDim.new(0, 100)
-UICorner_18.Parent = tracer_esp_frame_knopka
-
-hpbar_esp_lbl.Name = "hpbar_esp_lbl"
-hpbar_esp_lbl.Parent = misc_fem_2
-hpbar_esp_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hpbar_esp_lbl.BackgroundTransparency = 1.000
-hpbar_esp_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hpbar_esp_lbl.BorderSizePixel = 0
-hpbar_esp_lbl.Position = UDim2.new(0, 0, 0.312030077, 0)
-hpbar_esp_lbl.Size = UDim2.new(0, 84, 0, 14)
-hpbar_esp_lbl.Font = Enum.Font.Code
-hpbar_esp_lbl.Text = "Hp bar"
-hpbar_esp_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-hpbar_esp_lbl.TextScaled = true
-hpbar_esp_lbl.TextSize = 27.000
-hpbar_esp_lbl.TextWrapped = true
-
-hpbar_esp_button.Name = "hpbar_esp_button"
-hpbar_esp_button.Parent = hpbar_esp_lbl
-hpbar_esp_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-hpbar_esp_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hpbar_esp_button.BorderSizePixel = 0
-hpbar_esp_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-hpbar_esp_button.Size = UDim2.new(0, 36, 0, 19)
-hpbar_esp_button.Font = Enum.Font.SourceSans
-hpbar_esp_button.Text = ""
-hpbar_esp_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-hpbar_esp_button.TextSize = 14.000
-
-UICorner_19.CornerRadius = UDim.new(0, 10000)
-UICorner_19.Parent = hpbar_esp_button
-
-hpbar_esp_frame_knopka.Name = "hpbar_esp_frame_knopka"
-hpbar_esp_frame_knopka.Parent = hpbar_esp_button
-hpbar_esp_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hpbar_esp_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-hpbar_esp_frame_knopka.BorderSizePixel = 0
-hpbar_esp_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-hpbar_esp_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_20.CornerRadius = UDim.new(0, 100)
-UICorner_20.Parent = hpbar_esp_frame_knopka
-
-nickname_esp_lbl.Name = "nickname_esp_lbl"
-nickname_esp_lbl.Parent = misc_fem_2
-nickname_esp_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-nickname_esp_lbl.BackgroundTransparency = 1.000
-nickname_esp_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-nickname_esp_lbl.BorderSizePixel = 0
-nickname_esp_lbl.Position = UDim2.new(0, 0, 0.449999988, 0)
-nickname_esp_lbl.Size = UDim2.new(0, 84, 0, 14)
-nickname_esp_lbl.Font = Enum.Font.Code
-nickname_esp_lbl.Text = "  Nicknames"
-nickname_esp_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-nickname_esp_lbl.TextScaled = true
-nickname_esp_lbl.TextSize = 27.000
-nickname_esp_lbl.TextWrapped = true
-
-nickname_esp_button.Name = "nickname_esp_button"
-nickname_esp_button.Parent = nickname_esp_lbl
-nickname_esp_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-nickname_esp_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-nickname_esp_button.BorderSizePixel = 0
-nickname_esp_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-nickname_esp_button.Size = UDim2.new(0, 36, 0, 19)
-nickname_esp_button.Font = Enum.Font.SourceSans
-nickname_esp_button.Text = ""
-nickname_esp_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-nickname_esp_button.TextSize = 14.000
-
-UICorner_21.CornerRadius = UDim.new(0, 10000)
-UICorner_21.Parent = nickname_esp_button
-
-nickname_esp_frame_knopka.Name = "nickname_esp_frame_knopka"
-nickname_esp_frame_knopka.Parent = nickname_esp_button
-nickname_esp_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-nickname_esp_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-nickname_esp_frame_knopka.BorderSizePixel = 0
-nickname_esp_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-nickname_esp_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_22.CornerRadius = UDim.new(0, 100)
-UICorner_22.Parent = nickname_esp_frame_knopka
-
-champs_esp_lbl.Name = "champs_esp_lbl"
-champs_esp_lbl.Parent = misc_fem_2
-champs_esp_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-champs_esp_lbl.BackgroundTransparency = 1.000
-champs_esp_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-champs_esp_lbl.BorderSizePixel = 0
-champs_esp_lbl.Position = UDim2.new(0, 0, 0.58157897, 0)
-champs_esp_lbl.Size = UDim2.new(0, 84, 0, 14)
-champs_esp_lbl.Font = Enum.Font.Code
-champs_esp_lbl.Text = "Champs "
-champs_esp_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-champs_esp_lbl.TextScaled = true
-champs_esp_lbl.TextSize = 27.000
-champs_esp_lbl.TextWrapped = true
-
-champs_esp_button.Name = "champs_esp_button"
-champs_esp_button.Parent = champs_esp_lbl
-champs_esp_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-champs_esp_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-champs_esp_button.BorderSizePixel = 0
-champs_esp_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-champs_esp_button.Size = UDim2.new(0, 36, 0, 19)
-champs_esp_button.Font = Enum.Font.SourceSans
-champs_esp_button.Text = ""
-champs_esp_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-champs_esp_button.TextSize = 14.000
-
-UICorner_23.CornerRadius = UDim.new(0, 10000)
-UICorner_23.Parent = champs_esp_button
-
-champs_esp_frame_knopka.Name = "champs_esp_frame_knopka"
-champs_esp_frame_knopka.Parent = champs_esp_button
-champs_esp_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-champs_esp_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-champs_esp_frame_knopka.BorderSizePixel = 0
-champs_esp_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-champs_esp_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_24.CornerRadius = UDim.new(0, 100)
-UICorner_24.Parent = champs_esp_frame_knopka
-
-legitbot_section.Name = "legitbot_section"
-legitbot_section.Parent = alo
-legitbot_section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-legitbot_section.BackgroundTransparency = 1.000
-legitbot_section.BorderColor3 = Color3.fromRGB(0, 0, 0)
-legitbot_section.BorderSizePixel = 0
-legitbot_section.Position = UDim2.new(0.283972114, 0, 1.66666663, 0)
-legitbot_section.Size = UDim2.new(0, 411, 0, 307)
-legitbot_section.Visible = false
-
-misc_fem_3.Name = "misc_fem"
-misc_fem_3.Parent = legitbot_section
-misc_fem_3.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
-misc_fem_3.BackgroundTransparency = 0.980
-misc_fem_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_fem_3.BorderSizePixel = 0
-misc_fem_3.Position = UDim2.new(0.0510944463, 0, 0.0651465803, 0)
-misc_fem_3.Size = UDim2.new(0, 173, 0, 138)
-
-UICorner_25.CornerRadius = UDim.new(0, 6)
-UICorner_25.Parent = misc_fem_3
-
-aimbot_lbl.Name = "aimbot_lbl"
-aimbot_lbl.Parent = misc_fem_3
-aimbot_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-aimbot_lbl.BackgroundTransparency = 1.000
-aimbot_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-aimbot_lbl.BorderSizePixel = 0
-aimbot_lbl.Position = UDim2.new(0, 0, 0.0923503935, 0)
-aimbot_lbl.Size = UDim2.new(0, 84, 0, 14)
-aimbot_lbl.Font = Enum.Font.Code
-aimbot_lbl.Text = "Aimbot"
-aimbot_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-aimbot_lbl.TextScaled = true
-aimbot_lbl.TextSize = 27.000
-aimbot_lbl.TextWrapped = true
-
-aimbot_button.Name = "aimbot_button"
-aimbot_button.Parent = aimbot_lbl
-aimbot_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-aimbot_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-aimbot_button.BorderSizePixel = 0
-aimbot_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-aimbot_button.Size = UDim2.new(0, 36, 0, 19)
-aimbot_button.Font = Enum.Font.SourceSans
-aimbot_button.Text = ""
-aimbot_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-aimbot_button.TextSize = 14.000
-
-UICorner_26.CornerRadius = UDim.new(0, 10000)
-UICorner_26.Parent = aimbot_button
-
-aimbot_frame_knopka.Name = "aimbot_frame_knopka"
-aimbot_frame_knopka.Parent = aimbot_button
-aimbot_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-aimbot_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-aimbot_frame_knopka.BorderSizePixel = 0
-aimbot_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-aimbot_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_27.CornerRadius = UDim.new(0, 100)
-UICorner_27.Parent = aimbot_frame_knopka
-
-no_spread_lbl.Name = "no_spread_lbl"
-no_spread_lbl.Parent = misc_fem_3
-no_spread_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-no_spread_lbl.BackgroundTransparency = 1.000
-no_spread_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-no_spread_lbl.BorderSizePixel = 0
-no_spread_lbl.Position = UDim2.new(0, 0, 0.331480831, 0)
-no_spread_lbl.Size = UDim2.new(0, 116, 0, 14)
-no_spread_lbl.Font = Enum.Font.Code
-no_spread_lbl.Text = " No spread (in dev)"
-no_spread_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-no_spread_lbl.TextScaled = true
-no_spread_lbl.TextSize = 27.000
-no_spread_lbl.TextWrapped = true
-
-no_spread_button.Name = "no_spread_button"
-no_spread_button.Parent = no_spread_lbl
-no_spread_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-no_spread_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-no_spread_button.BorderSizePixel = 0
-no_spread_button.Position = UDim2.new(1.10467947, 0, -0.214285716, 0)
-no_spread_button.Size = UDim2.new(0, 36, 0, 19)
-no_spread_button.Font = Enum.Font.SourceSans
-no_spread_button.Text = ""
-no_spread_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-no_spread_button.TextSize = 14.000
-
-UICorner_28.CornerRadius = UDim.new(0, 10000)
-UICorner_28.Parent = no_spread_button
-
-no_spread_frame_knopka.Name = "no_spread_frame_knopka"
-no_spread_frame_knopka.Parent = no_spread_button
-no_spread_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-no_spread_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-no_spread_frame_knopka.BorderSizePixel = 0
-no_spread_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-no_spread_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_29.CornerRadius = UDim.new(0, 100)
-UICorner_29.Parent = no_spread_frame_knopka
-
-misc_fem_4.Name = "misc_fem"
-misc_fem_4.Parent = legitbot_section
-misc_fem_4.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
-misc_fem_4.BackgroundTransparency = 0.980
-misc_fem_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-misc_fem_4.BorderSizePixel = 0
-misc_fem_4.Position = UDim2.new(0.530413151, 0, 0.0651465803, 0)
-misc_fem_4.Size = UDim2.new(0, 173, 0, 138)
-
-UICorner_30.CornerRadius = UDim.new(0, 6)
-UICorner_30.Parent = misc_fem_4
-
-triggerbot_lbl.Name = "triggerbot_lbl"
-triggerbot_lbl.Parent = misc_fem_4
-triggerbot_lbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-triggerbot_lbl.BackgroundTransparency = 1.000
-triggerbot_lbl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-triggerbot_lbl.BorderSizePixel = 0
-triggerbot_lbl.Position = UDim2.new(0, 0, 0.0923503935, 0)
-triggerbot_lbl.Size = UDim2.new(0, 84, 0, 14)
-triggerbot_lbl.Font = Enum.Font.Code
-triggerbot_lbl.Text = "Triggerbot"
-triggerbot_lbl.TextColor3 = Color3.fromRGB(124, 124, 124)
-triggerbot_lbl.TextScaled = true
-triggerbot_lbl.TextSize = 27.000
-triggerbot_lbl.TextWrapped = true
-
-triggerbot_button.Name = "triggerbot_button"
-triggerbot_button.Parent = triggerbot_lbl
-triggerbot_button.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-triggerbot_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-triggerbot_button.BorderSizePixel = 0
-triggerbot_button.Position = UDim2.new(1.53571427, 0, -0.214285716, 0)
-triggerbot_button.Size = UDim2.new(0, 36, 0, 19)
-triggerbot_button.Font = Enum.Font.SourceSans
-triggerbot_button.Text = ""
-triggerbot_button.TextColor3 = Color3.fromRGB(0, 0, 0)
-triggerbot_button.TextSize = 14.000
-
-UICorner_31.CornerRadius = UDim.new(0, 10000)
-UICorner_31.Parent = triggerbot_button
-
-triggerbot_frame_knopka.Name = "triggerbot_frame_knopka"
-triggerbot_frame_knopka.Parent = triggerbot_button
-triggerbot_frame_knopka.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-triggerbot_frame_knopka.BorderColor3 = Color3.fromRGB(0, 0, 0)
-triggerbot_frame_knopka.BorderSizePixel = 0
-triggerbot_frame_knopka.Position = UDim2.new(0.109999999, 0, 0.123999998, 0)
-triggerbot_frame_knopka.Size = UDim2.new(0, 15, 0, 15)
-
-UICorner_32.CornerRadius = UDim.new(0, 100)
-UICorner_32.Parent = triggerbot_frame_knopka
-
-local uistorke = Instance.new("UIStroke")
-
-print(Color3, Instance)
-
-
-uistorke.Color = Color3.fromRGB(17, 17, 17)
-uistorke.Parent = misc_fem
-
-local uistorke1 = Instance.new("UIStroke")
-uistorke1.Color = Color3.fromRGB(17, 17, 17)
-uistorke1.Parent = misc_fem_2
-
-local uistorke2 = Instance.new("UIStroke")
-uistorke2.Color = Color3.fromRGB(17, 17, 17)
-uistorke2.Parent = misc_fem_3
-
-local uistorke3 = Instance.new("UIStroke")
-uistorke3.Color = Color3.fromRGB(17, 17, 17)
-uistorke3.Parent = misc_fem_4
-
-
-local uistorke4 = Instance.new("UIStroke")
-uistorke4.Color = Color3.fromRGB(17, 17, 17)
-uistorke4.Parent = TextLabel
-
-local uistorke5 = Instance.new("UIStroke")
-uistorke5.Color = Color3.fromRGB(17, 17, 17)
-uistorke5.Parent = hueta_kakayata
-
-local uistorke6 = Instance.new("UIStroke")
-uistorke6.Color = Color3.fromRGB(17, 17, 17)
-uistorke6.Parent = visuals_btn
-
-local uistorke7 = Instance.new("UIStroke")
-uistorke7.Color = Color3.fromRGB(17, 17, 17)
-uistorke7.Parent = misc_btn
-
-local uistorke8 = Instance.new("UIStroke")
-uistorke8.Color = Color3.fromRGB(17, 17, 17)
-uistorke8.Parent = legitbot_btn
-
-local uistorke9 = Instance.new("UIStroke")
-uistorke9.Color = Color3.fromRGB(17, 17, 17)
-uistorke9.Parent = background
-
-local legitbot_cfg = {
-	triggerbot = false,
-	aimbot = false,
-	aimpart = "Head",
-	sens = 0.01,
-	smoothness = 0.01,
-	fov = 70,
-	aimlock = false,
-	noSpread = false,
+if (true or false) and _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))._0x0007._0x0008:_0x0009(string.char(111, 114, 99, 104, 105, 100, 101, 97, 86, 49, 46, 51)) and _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))._0x0007._0x0008:_0x0009(string.char(111, 114, 99, 104, 105, 100, 101, 97, 86, 49, 46, 51))._0x000a == string.char(83, 99, 114, 101, 101, 110, 71, 117, 105) then
+_0x000b(string.char(100, 101, 98, 105, 108, 32, 117, 32, 116, 101, 98, 117, 97, 32, 101, 120, 101, 99, 116, 117, 110, 117, 116, 32, 99, 104, 101, 97, 116, 32, 100, 117, 114, 97, 107, 32, 114, 101, 106, 111, 105, 110, 32, 103, 97, 109, 101, 32, 105, 100, 105, 111, 116, 32, 102, 117, 117))
+else
+local _0x000c = _0x000d._0x000e(string.char(83, 99, 114, 101, 101, 110, 71, 117, 105))
+local _0x000f = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0010 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0011 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0012 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0013 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0014 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0015 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0016 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0017 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0018 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0019 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 111, 120))
+local _0x001a = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x001b = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x001c = _0x000d._0x000e(string.char(73, 109, 97, 103, 101, 76, 97, 98, 101, 108))
+local _0x001d = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x001e = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x001f = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0020 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0021 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0022 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0023 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0024 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0025 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0026 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0027 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0028 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0029 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x002a = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x002b = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x002c = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x002d = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x002e = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x002f = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0030 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0031 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0032 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0033 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0034 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0035 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0036 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0037 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0038 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0039 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x003a = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x003b = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x003c = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x003d = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x003e = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x003f = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0040 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0041 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0042 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0043 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0044 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0045 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0046 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0047 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0048 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0049 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x004a = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x004b = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x004c = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x004d = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x004e = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x004f = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0050 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0051 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0052 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0053 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0054 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0055 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0056 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0057 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0058 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0059 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x005a = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x005b = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x005c = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x005d = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x005e = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x005f = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0060 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0061 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0062 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x0063 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x0064 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0065 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0066 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0067 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x0068 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x0069 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+local _0x006a = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+local _0x006b = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+local _0x006c = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+local _0x006d = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x000c._0x006f = string.char(111, 114, 99, 104, 105, 100, 101, 97, 86, 49, 46, 51)
+_0x000c._0x0070 = _0x0005._0x0071._0x0007:_0x0072(string.char(80, 108, 97, 121, 101, 114, 71, 117, 105))
+_0x000c._0x0073 = _0x0074._0x0073._0x0075
+_0x000c._0x0076 = false
+_0x000f._0x006f = string.char(97, 108, 111)
+_0x000f._0x0070 = _0x000c
+_0x000f._0x0077 = _0x0078._0x0079(8, (4 + 4), 8)
+_0x000f._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x000f._0x007b = 0
+_0x000f._0x007c = _0x007d._0x000e(0.286272496, 0, 0.296137333, 0)
+_0x000f._0x007e = _0x007d._0x000e(0, (602 - 28), 0, (108 / 3))
+_0x000f._0x007f = _0x0074._0x007f._0x0080
+_0x000f._0x0081 = string.char(32, 32, 111, 114, 99, 104, 105, 100, 101, 97)
+_0x000f._0x0082 = _0x0078._0x0079((217 - 93), 124, (248 / 2))
+_0x000f._0x0083 = (120 - 87)
+_0x000f._0x0084 = _0x0074._0x0084._0x0085
+_0x0010._0x006f = string.char(98, 97, 99, 107, 103, 114, 111, 117, 110, 100)
+_0x0010._0x0070 = _0x000f
+_0x0010._0x0077 = _0x0078._0x0079((40 / 4), (20 / 2), (5 + 5))
+_0x0010._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0010._0x007b = 0
+_0x0010._0x007c = _0x007d._0x000e(0.283972114, 0, 1, 0)
+_0x0010._0x007e = _0x007d._0x000e(0, 411, 0, (166 + 166))
+_0x0011._0x006f = string.char(104, 117, 101, 116, 97, 95, 107, 97, 107, 97, 121, 97, 116, 97)
+_0x0011._0x0070 = _0x000f
+_0x0011._0x0077 = _0x0078._0x0079((4 + 4), (60 - 52), 8)
+_0x0011._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0011._0x007b = 0
+_0x0011._0x007c = _0x007d._0x000e(0, 0, 1, 0)
+_0x0011._0x007e = _0x007d._0x000e(0, (81 + 81), 0, 332)
+_0x0012._0x006f = string.char(108, 101, 103, 105, 116, 98, 111, 116, 95, 98, 116, 110)
+_0x0012._0x0070 = _0x0011
+_0x0012._0x0077 = _0x0078._0x0079(8, (4 + 4), (4 + 4))
+_0x0012._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0012._0x007b = 0
+_0x0012._0x007c = _0x007d._0x000e(1.0038271, 0, 0, 0)
+_0x0012._0x007e = _0x007d._0x000e(0, (414 / 3), 0, 24)
+_0x0012._0x007f = _0x0074._0x007f._0x0086
+_0x0012._0x0081 = string.char(76, 101, 103, 105, 116, 66, 111, 116, 32, 40, 105, 110, 32, 100, 101, 118, 46, 41)
+_0x0012._0x0082 = _0x0078._0x0079((243 - 94), 149, (447 / 3))
+_0x0012._0x0083 = (78 - 60)
+_0x0013._0x006f = string.char(108, 101, 103, 105, 116, 98, 111, 116, 95, 104, 105, 103, 104, 108, 105, 103, 104, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x0013._0x0070 = _0x0012
+_0x0013._0x0077 = _0x0078._0x0079((62 + 62), (496 / 4), 124)
+_0x0013._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0013._0x007b = 0
+_0x0013._0x007c = _0x007d._0x000e(0.158017814, 0, 0, 0)
+_0x0013._0x007e = _0x007d._0x000e(0, 92, 0, 1)
+_0x0013._0x0087 = false
+_0x0014._0x006f = string.char(109, 105, 115, 99, 95, 98, 116, 110)
+_0x0014._0x0070 = _0x0011
+_0x0014._0x0077 = _0x0078._0x0079((84 / 4), 21, (81 - 60))
+_0x0014._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0014._0x007b = 0
+_0x0014._0x007c = _0x007d._0x000e(2.68901277, 0, 0, 0)
+_0x0014._0x007e = _0x007d._0x000e(0, (69 + 69), 0, 24)
+_0x0014._0x007f = _0x0074._0x007f._0x0086
+_0x0014._0x0081 = string.char(77, 105, 115, 99, 32, 40, 105, 110, 32, 100, 101, 118, 46, 41)
+_0x0014._0x0082 = _0x0078._0x0079((230 - 81), (74 + 75), (447 / 3))
+_0x0014._0x0083 = (9 + 9)
+_0x0015._0x006f = string.char(109, 105, 115, 99, 95, 104, 105, 103, 104, 108, 105, 103, 104, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x0015._0x0070 = _0x0014
+_0x0015._0x0077 = _0x0078._0x0079(124, (201 - 77), (215 - 91))
+_0x0015._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0015._0x007b = 0
+_0x0015._0x007c = _0x007d._0x000e(0.165264189, 0, 0, 0)
+_0x0015._0x007e = _0x007d._0x000e(0, (368 / 4), 0, 1)
+_0x0016._0x006f = string.char(118, 105, 115, 117, 97, 108, 115, 95, 98, 116, 110)
+_0x0016._0x0070 = _0x0011
+_0x0016._0x0077 = _0x0078._0x0079((32 / 4), 8, 8)
+_0x0016._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0016._0x007b = 0
+_0x0016._0x007c = _0x007d._0x000e(1.85567904, 0, 0, 0)
+_0x0016._0x007e = _0x007d._0x000e(0, (69 + 69), 0, 24)
+_0x0016._0x007f = _0x0074._0x007f._0x0086
+_0x0016._0x0081 = string.char(86, 105, 115, 117, 97, 108, 115)
+_0x0016._0x0082 = _0x0078._0x0079((197 - 48), (74 + 75), (242 - 93))
+_0x0016._0x0083 = (54 / 3)
+_0x0017._0x006f = string.char(118, 105, 115, 117, 97, 108, 115, 95, 104, 105, 103, 104, 108, 105, 103, 104, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x0017._0x0070 = _0x0016
+_0x0017._0x0077 = _0x0078._0x0079((160 - 36), (216 - 92), 124)
+_0x0017._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0017._0x007b = 0
+_0x0017._0x007c = _0x007d._0x000e(0.158017814, 0, 0, 0)
+_0x0017._0x007e = _0x007d._0x000e(0, (137 - 45), 0, -1)
+_0x0017._0x0087 = false
+_0x0018._0x0070 = _0x0011
+_0x0018._0x0077 = _0x0078._0x0079((16 / 2), (33 - 25), 8)
+_0x0018._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0018._0x007b = 0
+_0x0018._0x007e = _0x007d._0x000e(0, (81 + 81), 0, 24)
+_0x0018._0x007f = _0x0074._0x007f._0x0088
+_0x0018._0x0081 = string.char(118, 101, 114, 115, 105, 111, 110, 32, 49, 46, 51, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32)
+_0x0018._0x0082 = _0x0078._0x0079((273 / 3), (188 - 97), 91)
+_0x0018._0x0083 = 19.000
+_0x0019._0x006f = string.char(108, 117, 97, 115, 99, 114, 105, 112, 116, 115)
+_0x0019._0x0070 = _0x000f
+_0x0019._0x0077 = _0x0078._0x0079(10, (88 - 78), (29 - 19))
+_0x0019._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0019._0x007b = 0
+_0x0019._0x007c = _0x007d._0x000e(0, 0, (4 + 4.527777670000001), 0)
+_0x0019._0x007e = _0x007d._0x000e(0, 162, 0, (240 / 4))
+_0x0019._0x007f = _0x0074._0x007f._0x0088
+_0x0019._0x0089 = _0x0078._0x0079((12 + 13), 25, 25)
+_0x0019._0x008a = string.char(108, 117, 97, 117, 32, 115, 99, 114, 105, 112, 116, 32, 104, 101, 114, 101)
+_0x0019._0x0081 = ""
+_0x0019._0x0082 = _0x0078._0x0079((77 - 30), (23 + 24), (23 + 24))
+_0x0019._0x008b = true
+_0x0019._0x0083 = (44 / 2)
+_0x0019._0x008c = true
+_0x001a._0x006f = string.char(109, 105, 115, 99, 95, 115, 101, 99, 116, 105, 111, 110)
+_0x001a._0x0070 = _0x000f
+_0x001a._0x0077 = _0x0078._0x0079((765 / 3), 255, (510 / 2))
+_0x001a._0x008d = 1.000
+_0x001a._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x001a._0x007b = 0
+_0x001a._0x007c = _0x007d._0x000e(0.283972114, 0, 1.66666663, 0)
+_0x001a._0x007e = _0x007d._0x000e(0, 411, 0, 307)
+_0x001b._0x006f = string.char(112, 108, 97, 121, 101, 114, 95, 119, 101, 108, 99, 111, 109, 101)
+_0x001b._0x0070 = _0x001a
+_0x001b._0x0077 = _0x0078._0x0079((342 - 87), (1020 / 4), 255)
+_0x001b._0x008d = 1.000
+_0x001b._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x001b._0x007b = 0
+_0x001b._0x007c = _0x007d._0x000e(0.703163028, 0, 0.0684039071, 0)
+_0x001b._0x007e = _0x007d._0x000e(0, (128 - 25), 0, 53)
+_0x001b._0x007f = _0x0074._0x007f._0x0088
+_0x001b._0x0081 = string.char(119, 101, 108, 99, 111, 109, 101, 32, 97, 108, 111, 95, 121, 101, 98, 105, 115, 104, 101, 33)
+_0x001b._0x0082 = _0x0078._0x0079(124, 124, (176 - 52))
+_0x001b._0x008b = true
+_0x001b._0x0083 = 1.000
+_0x001b._0x008c = true
+_0x001c._0x0070 = _0x001b
+_0x001c._0x0077 = _0x0078._0x0079(255, (510 / 2), (1020 / 4))
+_0x001c._0x008d = 1.000
+_0x001c._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x001c._0x007b = 0
+_0x001c._0x007c = _0x007d._0x000e(-0.577176273, 0, 0, 0)
+_0x001c._0x007e = _0x007d._0x000e(0, (99 - 44), 0, (27 + 28))
+_0x001c._0x008e = string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 116, 101, 120, 116, 117, 114, 101, 115, 47, 117, 105, 47, 71, 117, 105, 73, 109, 97, 103, 101, 80, 108, 97, 99, 101, 104, 111, 108, 100, 101, 114, 46, 112, 110, 103)
+_0x001d._0x006f = string.char(99, 117, 114, 114, 95, 101, 120, 101, 99, 117, 116, 111, 114)
+_0x001d._0x0070 = _0x001a
+_0x001d._0x0077 = _0x0078._0x0079((127 + 128), (306 - 51), 255)
+_0x001d._0x008d = 1.000
+_0x001d._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x001d._0x007b = 0
+_0x001d._0x007c = _0x007d._0x000e(0.560950935, 0, 0.302931607, 0)
+_0x001d._0x007e = _0x007d._0x000e(0, (80 + 81), 0, (83 - 57))
+_0x001d._0x007f = _0x0074._0x007f._0x0088
+_0x001d._0x0081 = string.char(101, 120, 101, 99, 117, 116, 111, 114, 114)
+_0x001d._0x0082 = _0x0078._0x0079((62 + 62), 124, (207 - 83))
+_0x001d._0x008b = true
+_0x001d._0x0083 = 1.000
+_0x001d._0x008c = true
+_0x001e._0x006f = string.char(109, 105, 115, 99, 95, 102, 101, 109)
+_0x001e._0x0070 = _0x001a
+_0x001e._0x0077 = _0x0078._0x0079(132, (264 / 2), (66 + 66))
+_0x001e._0x008d = 0.980
+_0x001e._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x001e._0x007b = 0
+_0x001e._0x007c = _0x007d._0x000e(0.0510944463, 0, 0.0651465803, 0)
+_0x001e._0x007e = _0x007d._0x000e(0, 173, 0, (1064 / 4))
+_0x001f._0x008f = _0x0090._0x000e(0, 6)
+_0x001f._0x0070 = _0x001e
+_0x0020._0x006f = string.char(99, 117, 115, 116, 111, 109, 102, 111, 118, 95, 108, 98, 108)
+_0x0020._0x0070 = _0x001e
+_0x0020._0x0077 = _0x0078._0x0079((510 / 2), (127 + 128), (1020 / 4))
+_0x0020._0x008d = 1.000
+_0x0020._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0020._0x007b = 0
+_0x0020._0x007c = _0x007d._0x000e(0, 0, 0.0488721803, 0)
+_0x0020._0x007e = _0x007d._0x000e(0, (42 + 42), 0, (56 / 4))
+_0x0020._0x007f = _0x0074._0x007f._0x0086
+_0x0020._0x0081 = string.char(32, 67, 117, 115, 116, 111, 109, 32, 70, 79, 86)
+_0x0020._0x0082 = _0x0078._0x0079(124, 124, (62 + 62))
+_0x0020._0x008b = true
+_0x0020._0x0083 = 27.000
+_0x0020._0x008c = true
+_0x0021._0x006f = string.char(99, 117, 115, 116, 111, 109, 95, 102, 111, 118, 95, 98, 117, 116, 116, 111, 110)
+_0x0021._0x0070 = _0x0020
+_0x0021._0x0077 = _0x0078._0x0079((98 / 2), (196 / 4), (113 - 64))
+_0x0021._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0021._0x007b = 0
+_0x0021._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0021._0x007e = _0x007d._0x000e(0, (18 + 18), 0, (9 + 10))
+_0x0021._0x007f = _0x0074._0x007f._0x0088
+_0x0021._0x0081 = ""
+_0x0021._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0021._0x0083 = 14.000
+_0x0022._0x008f = _0x0090._0x000e(0, (5000 + 5000))
+_0x0022._0x0070 = _0x0021
+_0x0023._0x006f = string.char(99, 117, 115, 116, 111, 109, 102, 111, 118, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0023._0x0070 = _0x0021
+_0x0023._0x0077 = _0x0078._0x0079((127 + 128), (127 + 128), (342 - 87))
+_0x0023._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0023._0x007b = 0
+_0x0023._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0023._0x007e = _0x007d._0x000e(0, (97 - 82), 0, 15)
+_0x0024._0x008f = _0x0090._0x000e(0, 100)
+_0x0024._0x0070 = _0x0023
+_0x0025._0x006f = string.char(102, 108, 121, 95, 108, 98, 108)
+_0x0025._0x0070 = _0x001e
+_0x0025._0x0077 = _0x0078._0x0079((127 + 128), (127 + 128), 255)
+_0x0025._0x008d = 1.000
+_0x0025._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0025._0x007b = 0
+_0x0025._0x007c = _0x007d._0x000e(0, 0, 0.191729322, 0)
+_0x0025._0x007e = _0x007d._0x000e(0, (97 - 13), 0, 14)
+_0x0025._0x007f = _0x0074._0x007f._0x0086
+_0x0025._0x0081 = string.char(70, 108, 121)
+_0x0025._0x0082 = _0x0078._0x0079((62 + 62), (248 / 2), (62 + 62))
+_0x0025._0x008b = true
+_0x0025._0x0083 = 27.000
+_0x0025._0x008c = true
+_0x0026._0x006f = string.char(102, 108, 121, 95, 98, 117, 116, 116, 111, 110)
+_0x0026._0x0070 = _0x0025
+_0x0026._0x0077 = _0x0078._0x0079((196 / 4), (64 - 15), (98 / 2))
+_0x0026._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0026._0x007b = 0
+_0x0026._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0026._0x007e = _0x007d._0x000e(0, 36, 0, 19)
+_0x0026._0x007f = _0x0074._0x007f._0x0088
+_0x0026._0x0081 = ""
+_0x0026._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0026._0x0083 = (7 + 7)
+_0x0027._0x008f = _0x0090._0x000e(0, (5000 + 5000))
+_0x0027._0x0070 = _0x0026
+_0x0028._0x006f = string.char(102, 108, 121, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0028._0x0070 = _0x0026
+_0x0028._0x0077 = _0x0078._0x0079(255, 255, 255)
+_0x0028._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0028._0x007b = 0
+_0x0028._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0028._0x007e = _0x007d._0x000e(0, 15, 0, (30 / 2))
+_0x0029._0x008f = _0x0090._0x000e(0, 100)
+_0x0029._0x0070 = _0x0028
+_0x002a._0x006f = string.char(116, 104, 105, 114, 100, 95, 112, 101, 114, 115, 111, 110, 95, 108, 98, 108)
+_0x002a._0x0070 = _0x001e
+_0x002a._0x0077 = _0x0078._0x0079(255, (127 + 128), (765 / 3))
+_0x002a._0x008d = 1.000
+_0x002a._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x002a._0x007b = 0
+_0x002a._0x007c = _0x007d._0x000e(0, 0, 0.357142866, 0)
+_0x002a._0x007e = _0x007d._0x000e(0, 84, 0, (42 / 3))
+_0x002a._0x007f = _0x0074._0x007f._0x0086
+_0x002a._0x0081 = string.char(32, 32, 84, 104, 105, 114, 100, 32, 80, 101, 114, 115, 111, 110)
+_0x002a._0x0082 = _0x0078._0x0079(124, (62 + 62), (218 - 94))
+_0x002a._0x008b = true
+_0x002a._0x0083 = (81 / 3)
+_0x002a._0x008c = true
+_0x002b._0x006f = string.char(116, 104, 105, 114, 100, 95, 112, 101, 114, 115, 111, 110, 95, 98, 117, 116, 116, 111, 110)
+_0x002b._0x0070 = _0x002a
+_0x002b._0x0077 = _0x0078._0x0079(49, (98 / 2), 49)
+_0x002b._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x002b._0x007b = 0
+_0x002b._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x002b._0x007e = _0x007d._0x000e(0, 36, 0, (9 + 10))
+_0x002b._0x007f = _0x0074._0x007f._0x0088
+_0x002b._0x0081 = ""
+_0x002b._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x002b._0x0083 = 14.000
+_0x002c._0x008f = _0x0090._0x000e(0, 10000)
+_0x002c._0x0070 = _0x002b
+_0x002d._0x006f = string.char(116, 104, 105, 114, 100, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x002d._0x0070 = _0x002b
+_0x002d._0x0077 = _0x0078._0x0079(255, 255, (127 + 128))
+_0x002d._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x002d._0x007b = 0
+_0x002d._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x002d._0x007e = _0x007d._0x000e(0, 15, 0, (64 - 49))
+_0x002e._0x008f = _0x0090._0x000e(0, 100)
+_0x002e._0x0070 = _0x002d
+_0x002f._0x006f = string.char(97, 117, 116, 111, 95, 99, 111, 108, 108, 101, 99, 116, 95, 108, 98, 108)
+_0x002f._0x0070 = _0x001e
+_0x002f._0x0077 = _0x0078._0x0079((127 + 128), 255, 255)
+_0x002f._0x008d = 1.000
+_0x002f._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x002f._0x007b = 0
+_0x002f._0x007c = _0x007d._0x000e(0, 0, 0.503759384, 0)
+_0x002f._0x007e = _0x007d._0x000e(0, (53 + 53), 0, (110 - 96))
+_0x002f._0x007f = _0x0074._0x007f._0x0086
+_0x002f._0x0081 = string.char(32, 65, 117, 116, 111, 32, 109, 111, 110, 101, 121, 32, 99, 111, 108, 108, 101, 99, 116)
+_0x002f._0x0082 = _0x0078._0x0079((142 - 18), (248 / 2), (148 - 24))
+_0x002f._0x008b = true
+_0x002f._0x008c = true
+_0x0030._0x006f = string.char(97, 117, 116, 111, 95, 99, 111, 108, 108, 101, 99, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x0030._0x0070 = _0x002f
+_0x0030._0x0077 = _0x0078._0x0079((196 / 4), (147 / 3), 49)
+_0x0030._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0030._0x007b = 0
+_0x0030._0x007c = _0x007d._0x000e(1.21516442, 0, 0, 0)
+_0x0030._0x007e = _0x007d._0x000e(0, 36, 0, (111 - 92))
+_0x0030._0x007f = _0x0074._0x007f._0x0088
+_0x0030._0x0081 = ""
+_0x0030._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0030._0x0083 = 14.000
+_0x0031._0x008f = _0x0090._0x000e(0, (10037 - 37))
+_0x0031._0x0070 = _0x0030
+_0x0032._0x006f = string.char(97, 117, 116, 111, 95, 99, 111, 108, 108, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0032._0x0070 = _0x0030
+_0x0032._0x0077 = _0x0078._0x0079((1020 / 4), 255, 255)
+_0x0032._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0032._0x007b = 0
+_0x0032._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0032._0x007e = _0x007d._0x000e(0, (45 / 3), 0, (45 / 3))
+_0x0033._0x008f = _0x0090._0x000e(0, 100)
+_0x0033._0x0070 = _0x0032
+_0x0034._0x006f = string.char(115, 112, 105, 110, 98, 111, 116, 95, 108, 98, 108)
+_0x0034._0x0070 = _0x001e
+_0x0034._0x0077 = _0x0078._0x0079((765 / 3), (127 + 128), (127 + 128))
+_0x0034._0x008d = 1.000
+_0x0034._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0034._0x007b = 0
+_0x0034._0x007c = _0x007d._0x000e(0, 0, 0.672932327, 0)
+_0x0034._0x007e = _0x007d._0x000e(0, 84, 0, (56 - 42))
+_0x0034._0x007f = _0x0074._0x007f._0x0086
+_0x0034._0x0081 = string.char(83, 112, 105, 110, 66, 111, 116)
+_0x0034._0x0082 = _0x0078._0x0079(124, (62 + 62), (496 / 4))
+_0x0034._0x008b = true
+_0x0034._0x0083 = 27.000
+_0x0034._0x008c = true
+_0x0035._0x006f = string.char(115, 112, 105, 110, 98, 111, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x0035._0x0070 = _0x0034
+_0x0035._0x0077 = _0x0078._0x0079((24 + 25), 49, (98 / 2))
+_0x0035._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0035._0x007b = 0
+_0x0035._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0035._0x007e = _0x007d._0x000e(0, 36, 0, 19)
+_0x0035._0x007f = _0x0074._0x007f._0x0088
+_0x0035._0x0081 = ""
+_0x0035._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0035._0x0083 = (42 / 3)
+_0x0036._0x008f = _0x0090._0x000e(0, 10000)
+_0x0036._0x0070 = _0x0035
+_0x0037._0x006f = string.char(115, 112, 105, 110, 98, 111, 116, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0037._0x0070 = _0x0035
+_0x0037._0x0077 = _0x0078._0x0079((338 - 83), (765 / 3), 255)
+_0x0037._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0037._0x007b = 0
+_0x0037._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0037._0x007e = _0x007d._0x000e(0, (7 + 8), 0, (7 + 8))
+_0x0038._0x008f = _0x0090._0x000e(0, (300 / 3))
+_0x0038._0x0070 = _0x0037
+_0x0039._0x006f = string.char(104, 105, 116, 115, 111, 117, 110, 100, 95, 108, 98, 108)
+_0x0039._0x0070 = _0x001e
+_0x0039._0x0077 = _0x0078._0x0079(255, (765 / 3), 255)
+_0x0039._0x008d = 1.000
+_0x0039._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0039._0x007b = 0
+_0x0039._0x007c = _0x007d._0x000e(0, 0, 0.830827057, 0)
+_0x0039._0x007e = _0x007d._0x000e(0, 128, 0, (95 - 81))
+_0x0039._0x007f = _0x0074._0x007f._0x0086
+_0x0039._0x0081 = string.char(67, 117, 115, 116, 111, 109, 32, 104, 105, 116, 115, 111, 117, 110, 100, 32, 40, 114, 117, 115, 116, 41)
+_0x0039._0x0082 = _0x0078._0x0079((62 + 62), (372 / 3), (372 / 3))
+_0x0039._0x008b = true
+_0x0039._0x0083 = (81 / 3)
+_0x0039._0x008c = true
+_0x003a._0x006f = string.char(104, 105, 116, 115, 111, 117, 110, 100, 95, 98, 117, 116, 116, 111, 110)
+_0x003a._0x0070 = _0x0039
+_0x003a._0x0077 = _0x0078._0x0079((98 - 49), (98 / 2), (98 / 2))
+_0x003a._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x003a._0x007b = 0
+_0x003a._0x007c = _0x007d._0x000e(1.00446415, 0, -0.214285716, 0)
+_0x003a._0x007e = _0x007d._0x000e(0, (108 / 3), 0, (9 + 10))
+_0x003a._0x007f = _0x0074._0x007f._0x0088
+_0x003a._0x0081 = ""
+_0x003a._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x003a._0x0083 = (7 + 7)
+_0x003b._0x008f = _0x0090._0x000e(0, (10023 - 23))
+_0x003b._0x0070 = _0x003a
+_0x003c._0x006f = string.char(104, 105, 116, 115, 111, 117, 110, 100, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x003c._0x0070 = _0x003a
+_0x003c._0x0077 = _0x0078._0x0079((351 - 96), (765 / 3), (765 / 3))
+_0x003c._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x003c._0x007b = 0
+_0x003c._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x003c._0x007e = _0x007d._0x000e(0, (30 / 2), 0, (60 - 45))
+_0x003d._0x008f = _0x0090._0x000e(0, (125 - 25))
+_0x003d._0x0070 = _0x003c
+_0x003e._0x006f = string.char(118, 105, 115, 117, 97, 108, 115, 95, 115, 101, 99, 116, 105, 111, 110)
+_0x003e._0x0070 = _0x000f
+_0x003e._0x0077 = _0x0078._0x0079(255, 255, 255)
+_0x003e._0x008d = 1.000
+_0x003e._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x003e._0x007b = 0
+_0x003e._0x007c = _0x007d._0x000e(0.283972114, 0, 1.66666663, 0)
+_0x003e._0x007e = _0x007d._0x000e(0, (822 / 2), 0, (614 / 2))
+_0x003e._0x0087 = false
+_0x003f._0x006f = string.char(109, 105, 115, 99, 95, 102, 101, 109)
+_0x003f._0x0070 = _0x003e
+_0x003f._0x0077 = _0x0078._0x0079(132, (66 + 66), (176 - 44))
+_0x003f._0x008d = 0.980
+_0x003f._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x003f._0x007b = 0
+_0x003f._0x007c = _0x007d._0x000e(0.0510944463, 0, 0.0651465803, 0)
+_0x003f._0x007e = _0x007d._0x000e(0, 173, 0, (361 - 95))
+_0x0040._0x008f = _0x0090._0x000e(0, 6)
+_0x0040._0x0070 = _0x003f
+_0x0041._0x006f = string.char(98, 111, 120, 95, 101, 115, 112, 95, 108, 98, 108)
+_0x0041._0x0070 = _0x003f
+_0x0041._0x0077 = _0x0078._0x0079((127 + 128), 255, 255)
+_0x0041._0x008d = 1.000
+_0x0041._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0041._0x007b = 0
+_0x0041._0x007c = _0x007d._0x000e(0, 0, 0.0488721803, 0)
+_0x0041._0x007e = _0x007d._0x000e(0, 84, 0, (42 / 3))
+_0x0041._0x007f = _0x0074._0x007f._0x0086
+_0x0041._0x0081 = string.char(69, 115, 112, 32, 66, 111, 120)
+_0x0041._0x0082 = _0x0078._0x0079((248 / 2), (210 - 86), (248 / 2))
+_0x0041._0x008b = true
+_0x0041._0x0083 = (13 + 14)
+_0x0041._0x008c = true
+_0x0042._0x006f = string.char(98, 111, 120, 95, 101, 115, 112, 95, 98, 117, 116, 116, 111, 110)
+_0x0042._0x0070 = _0x0041
+_0x0042._0x0077 = _0x0078._0x0079(49, (95 - 46), (98 / 2))
+_0x0042._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0042._0x007b = 0
+_0x0042._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0042._0x007e = _0x007d._0x000e(0, (18 + 18), 0, 19)
+_0x0042._0x007f = _0x0074._0x007f._0x0088
+_0x0042._0x0081 = ""
+_0x0042._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0042._0x0083 = (56 / 4)
+_0x0043._0x008f = _0x0090._0x000e(0, (10044 - 44))
+_0x0043._0x0070 = _0x0042
+_0x0044._0x006f = string.char(98, 111, 120, 95, 101, 115, 112, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0044._0x0070 = _0x0042
+_0x0044._0x0077 = _0x0078._0x0079(255, (765 / 3), (271 - 16))
+_0x0044._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0044._0x007b = 0
+_0x0044._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0044._0x007e = _0x007d._0x000e(0, 15, 0, (95 - 80))
+_0x0045._0x008f = _0x0090._0x000e(0, 100)
+_0x0045._0x0070 = _0x0044
+_0x0046._0x006f = string.char(116, 114, 97, 99, 101, 114, 95, 101, 115, 112, 95, 108, 98, 108)
+_0x0046._0x0070 = _0x003f
+_0x0046._0x0077 = _0x0078._0x0079((293 - 38), 255, 255)
+_0x0046._0x008d = 1.000
+_0x0046._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0046._0x007b = 0
+_0x0046._0x007c = _0x007d._0x000e(0, 0, 0.180451125, 0)
+_0x0046._0x007e = _0x007d._0x000e(0, (116 - 32), 0, 14)
+_0x0046._0x007f = _0x0074._0x007f._0x0086
+_0x0046._0x0081 = string.char(84, 114, 97, 99, 101, 114, 115)
+_0x0046._0x0082 = _0x0078._0x0079((142 - 18), (202 - 78), (496 / 4))
+_0x0046._0x008b = true
+_0x0046._0x0083 = (13 + 14)
+_0x0046._0x008c = true
+_0x0047._0x006f = string.char(116, 114, 97, 99, 101, 114, 95, 101, 115, 112, 95, 98, 117, 116, 116, 111, 110)
+_0x0047._0x0070 = _0x0046
+_0x0047._0x0077 = _0x0078._0x0079(49, (24 + 25), (24 + 25))
+_0x0047._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0047._0x007b = 0
+_0x0047._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0047._0x007e = _0x007d._0x000e(0, (74 - 38), 0, 19)
+_0x0047._0x007f = _0x0074._0x007f._0x0088
+_0x0047._0x0081 = ""
+_0x0047._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0047._0x0083 = 14.000
+_0x0048._0x008f = _0x0090._0x000e(0, (10048 - 48))
+_0x0048._0x0070 = _0x0047
+_0x0049._0x006f = string.char(116, 114, 97, 99, 101, 114, 95, 101, 115, 112, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0049._0x0070 = _0x0047
+_0x0049._0x0077 = _0x0078._0x0079(255, 255, 255)
+_0x0049._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0049._0x007b = 0
+_0x0049._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0049._0x007e = _0x007d._0x000e(0, (100 - 85), 0, (7 + 8))
+_0x004a._0x008f = _0x0090._0x000e(0, 100)
+_0x004a._0x0070 = _0x0049
+_0x004b._0x006f = string.char(104, 112, 98, 97, 114, 95, 101, 115, 112, 95, 108, 98, 108)
+_0x004b._0x0070 = _0x003f
+_0x004b._0x0077 = _0x0078._0x0079((127 + 128), (510 / 2), (127 + 128))
+_0x004b._0x008d = 1.000
+_0x004b._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x004b._0x007b = 0
+_0x004b._0x007c = _0x007d._0x000e(0, 0, 0.312030077, 0)
+_0x004b._0x007e = _0x007d._0x000e(0, (42 + 42), 0, 14)
+_0x004b._0x007f = _0x0074._0x007f._0x0086
+_0x004b._0x0081 = string.char(72, 112, 32, 98, 97, 114)
+_0x004b._0x0082 = _0x0078._0x0079((248 / 2), 124, (173 - 49))
+_0x004b._0x008b = true
+_0x004b._0x0083 = 27.000
+_0x004b._0x008c = true
+_0x004c._0x006f = string.char(104, 112, 98, 97, 114, 95, 101, 115, 112, 95, 98, 117, 116, 116, 111, 110)
+_0x004c._0x0070 = _0x004b
+_0x004c._0x0077 = _0x0078._0x0079(49, 49, 49)
+_0x004c._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x004c._0x007b = 0
+_0x004c._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x004c._0x007e = _0x007d._0x000e(0, 36, 0, 19)
+_0x004c._0x007f = _0x0074._0x007f._0x0088
+_0x004c._0x0081 = ""
+_0x004c._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x004c._0x0083 = (28 / 2)
+_0x004d._0x008f = _0x0090._0x000e(0, 10000)
+_0x004d._0x0070 = _0x004c
+_0x004e._0x006f = string.char(104, 112, 98, 97, 114, 95, 101, 115, 112, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x004e._0x0070 = _0x004c
+_0x004e._0x0077 = _0x0078._0x0079(255, (765 / 3), 255)
+_0x004e._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x004e._0x007b = 0
+_0x004e._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x004e._0x007e = _0x007d._0x000e(0, (108 - 93), 0, 15)
+_0x004f._0x008f = _0x0090._0x000e(0, (154 - 54))
+_0x004f._0x0070 = _0x004e
+_0x0050._0x006f = string.char(110, 105, 99, 107, 110, 97, 109, 101, 95, 101, 115, 112, 95, 108, 98, 108)
+_0x0050._0x0070 = _0x003f
+_0x0050._0x0077 = _0x0078._0x0079(255, 255, (765 / 3))
+_0x0050._0x008d = 1.000
+_0x0050._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0050._0x007b = 0
+_0x0050._0x007c = _0x007d._0x000e(0, 0, 0.449999988, 0)
+_0x0050._0x007e = _0x007d._0x000e(0, (168 / 2), 0, (56 / 4))
+_0x0050._0x007f = _0x0074._0x007f._0x0086
+_0x0050._0x0081 = string.char(32, 32, 78, 105, 99, 107, 110, 97, 109, 101, 115)
+_0x0050._0x0082 = _0x0078._0x0079((214 - 90), (62 + 62), (62 + 62))
+_0x0050._0x008b = true
+_0x0050._0x0083 = 27.000
+_0x0050._0x008c = true
+_0x0051._0x006f = string.char(110, 105, 99, 107, 110, 97, 109, 101, 95, 101, 115, 112, 95, 98, 117, 116, 116, 111, 110)
+_0x0051._0x0070 = _0x0050
+_0x0051._0x0077 = _0x0078._0x0079(49, (98 / 2), (124 - 75))
+_0x0051._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0051._0x007b = 0
+_0x0051._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0051._0x007e = _0x007d._0x000e(0, (144 / 4), 0, (76 - 57))
+_0x0051._0x007f = _0x0074._0x007f._0x0088
+_0x0051._0x0081 = ""
+_0x0051._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0051._0x0083 = (7 + 7)
+_0x0052._0x008f = _0x0090._0x000e(0, 10000)
+_0x0052._0x0070 = _0x0051
+_0x0053._0x006f = string.char(110, 105, 99, 107, 110, 97, 109, 101, 95, 101, 115, 112, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0053._0x0070 = _0x0051
+_0x0053._0x0077 = _0x0078._0x0079(255, (1020 / 4), (127 + 128))
+_0x0053._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0053._0x007b = 0
+_0x0053._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0053._0x007e = _0x007d._0x000e(0, 15, 0, (30 / 2))
+_0x0054._0x008f = _0x0090._0x000e(0, 100)
+_0x0054._0x0070 = _0x0053
+_0x0055._0x006f = string.char(99, 104, 97, 109, 112, 115, 95, 101, 115, 112, 95, 108, 98, 108)
+_0x0055._0x0070 = _0x003f
+_0x0055._0x0077 = _0x0078._0x0079(255, (127 + 128), 255)
+_0x0055._0x008d = 1.000
+_0x0055._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0055._0x007b = 0
+_0x0055._0x007c = _0x007d._0x000e(0, 0, 0.58157897, 0)
+_0x0055._0x007e = _0x007d._0x000e(0, (42 + 42), 0, (7 + 7))
+_0x0055._0x007f = _0x0074._0x007f._0x0086
+_0x0055._0x0081 = string.char(67, 104, 97, 109, 112, 115, 32)
+_0x0055._0x0082 = _0x0078._0x0079((62 + 62), (62 + 62), (197 - 73))
+_0x0055._0x008b = true
+_0x0055._0x0083 = (108 / 4)
+_0x0055._0x008c = true
+_0x0056._0x006f = string.char(99, 104, 97, 109, 112, 115, 95, 101, 115, 112, 95, 98, 117, 116, 116, 111, 110)
+_0x0056._0x0070 = _0x0055
+_0x0056._0x0077 = _0x0078._0x0079((68 - 19), (80 - 31), 49)
+_0x0056._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0056._0x007b = 0
+_0x0056._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x0056._0x007e = _0x007d._0x000e(0, (18 + 18), 0, (68 - 49))
+_0x0056._0x007f = _0x0074._0x007f._0x0088
+_0x0056._0x0081 = ""
+_0x0056._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0056._0x0083 = (44 - 30)
+_0x0057._0x008f = _0x0090._0x000e(0, (10024 - 24))
+_0x0057._0x0070 = _0x0056
+_0x0058._0x006f = string.char(99, 104, 97, 109, 112, 115, 95, 101, 115, 112, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0058._0x0070 = _0x0056
+_0x0058._0x0077 = _0x0078._0x0079((304 - 49), (1020 / 4), 255)
+_0x0058._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0058._0x007b = 0
+_0x0058._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0058._0x007e = _0x007d._0x000e(0, (108 - 93), 0, (45 / 3))
+_0x0059._0x008f = _0x0090._0x000e(0, 100)
+_0x0059._0x0070 = _0x0058
+_0x005a._0x006f = string.char(108, 101, 103, 105, 116, 98, 111, 116, 95, 115, 101, 99, 116, 105, 111, 110)
+_0x005a._0x0070 = _0x000f
+_0x005a._0x0077 = _0x0078._0x0079((127 + 128), (127 + 128), (127 + 128))
+_0x005a._0x008d = 1.000
+_0x005a._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x005a._0x007b = 0
+_0x005a._0x007c = _0x007d._0x000e(0.283972114, 0, 1.66666663, 0)
+_0x005a._0x007e = _0x007d._0x000e(0, 411, 0, 307)
+_0x005a._0x0087 = false
+_0x005b._0x006f = string.char(109, 105, 115, 99, 95, 102, 101, 109)
+_0x005b._0x0070 = _0x005a
+_0x005b._0x0077 = _0x0078._0x0079(132, (183 - 51), (396 / 3))
+_0x005b._0x008d = 0.980
+_0x005b._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x005b._0x007b = 0
+_0x005b._0x007c = _0x007d._0x000e(0.0510944463, 0, 0.0651465803, 0)
+_0x005b._0x007e = _0x007d._0x000e(0, (86 + 87), 0, (69 + 69))
+_0x005c._0x008f = _0x0090._0x000e(0, 6)
+_0x005c._0x0070 = _0x005b
+_0x005d._0x006f = string.char(97, 105, 109, 98, 111, 116, 95, 108, 98, 108)
+_0x005d._0x0070 = _0x005b
+_0x005d._0x0077 = _0x0078._0x0079((127 + 128), (127 + 128), (127 + 128))
+_0x005d._0x008d = 1.000
+_0x005d._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x005d._0x007b = 0
+_0x005d._0x007c = _0x007d._0x000e(0, 0, 0.0923503935, 0)
+_0x005d._0x007e = _0x007d._0x000e(0, 84, 0, (7 + 7))
+_0x005d._0x007f = _0x0074._0x007f._0x0086
+_0x005d._0x0081 = string.char(65, 105, 109, 98, 111, 116)
+_0x005d._0x0082 = _0x0078._0x0079((178 - 54), 124, (372 / 3))
+_0x005d._0x008b = true
+_0x005d._0x0083 = (81 / 3)
+_0x005d._0x008c = true
+_0x005e._0x006f = string.char(97, 105, 109, 98, 111, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x005e._0x0070 = _0x005d
+_0x005e._0x0077 = _0x0078._0x0079((196 / 4), (24 + 25), (24 + 25))
+_0x005e._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x005e._0x007b = 0
+_0x005e._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x005e._0x007e = _0x007d._0x000e(0, 36, 0, 19)
+_0x005e._0x007f = _0x0074._0x007f._0x0088
+_0x005e._0x0081 = ""
+_0x005e._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x005e._0x0083 = 14.000
+_0x005f._0x008f = _0x0090._0x000e(0, (5000 + 5000))
+_0x005f._0x0070 = _0x005e
+_0x0060._0x006f = string.char(97, 105, 109, 98, 111, 116, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0060._0x0070 = _0x005e
+_0x0060._0x0077 = _0x0078._0x0079((1020 / 4), 255, (308 - 53))
+_0x0060._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0060._0x007b = 0
+_0x0060._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0060._0x007e = _0x007d._0x000e(0, 15, 0, 15)
+_0x0061._0x008f = _0x0090._0x000e(0, 100)
+_0x0061._0x0070 = _0x0060
+_0x0062._0x006f = string.char(110, 111, 95, 115, 112, 114, 101, 97, 100, 95, 108, 98, 108)
+_0x0062._0x0070 = _0x005b
+_0x0062._0x0077 = _0x0078._0x0079(255, (765 / 3), (765 / 3))
+_0x0062._0x008d = 1.000
+_0x0062._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0062._0x007b = 0
+_0x0062._0x007c = _0x007d._0x000e(0, 0, 0.331480831, 0)
+_0x0062._0x007e = _0x007d._0x000e(0, (232 / 2), 0, 14)
+_0x0062._0x007f = _0x0074._0x007f._0x0086
+_0x0062._0x0081 = string.char(32, 78, 111, 32, 115, 112, 114, 101, 97, 100, 32, 40, 105, 110, 32, 100, 101, 118, 41)
+_0x0062._0x0082 = _0x0078._0x0079((496 / 4), (62 + 62), (62 + 62))
+_0x0062._0x008b = true
+_0x0062._0x0083 = (13 + 14)
+_0x0062._0x008c = true
+_0x0063._0x006f = string.char(110, 111, 95, 115, 112, 114, 101, 97, 100, 95, 98, 117, 116, 116, 111, 110)
+_0x0063._0x0070 = _0x0062
+_0x0063._0x0077 = _0x0078._0x0079((24 + 25), 49, (147 / 3))
+_0x0063._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0063._0x007b = 0
+_0x0063._0x007c = _0x007d._0x000e(1.10467947, 0, -0.214285716, 0)
+_0x0063._0x007e = _0x007d._0x000e(0, 36, 0, 19)
+_0x0063._0x007f = _0x0074._0x007f._0x0088
+_0x0063._0x0081 = ""
+_0x0063._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x0063._0x0083 = (34 - 20)
+_0x0064._0x008f = _0x0090._0x000e(0, 10000)
+_0x0064._0x0070 = _0x0063
+_0x0065._0x006f = string.char(110, 111, 95, 115, 112, 114, 101, 97, 100, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x0065._0x0070 = _0x0063
+_0x0065._0x0077 = _0x0078._0x0079(255, 255, 255)
+_0x0065._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0065._0x007b = 0
+_0x0065._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x0065._0x007e = _0x007d._0x000e(0, (60 / 4), 0, 15)
+_0x0066._0x008f = _0x0090._0x000e(0, (50 + 50))
+_0x0066._0x0070 = _0x0065
+_0x0067._0x006f = string.char(109, 105, 115, 99, 95, 102, 101, 109)
+_0x0067._0x0070 = _0x005a
+_0x0067._0x0077 = _0x0078._0x0079((66 + 66), (528 / 4), 132)
+_0x0067._0x008d = 0.980
+_0x0067._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0067._0x007b = 0
+_0x0067._0x007c = _0x007d._0x000e(0.530413151, 0, 0.0651465803, 0)
+_0x0067._0x007e = _0x007d._0x000e(0, (519 / 3), 0, (214 - 76))
+_0x0068._0x008f = _0x0090._0x000e(0, (3 + 3))
+_0x0068._0x0070 = _0x0067
+_0x0069._0x006f = string.char(116, 114, 105, 103, 103, 101, 114, 98, 111, 116, 95, 108, 98, 108)
+_0x0069._0x0070 = _0x0067
+_0x0069._0x0077 = _0x0078._0x0079(255, 255, (127 + 128))
+_0x0069._0x008d = 1.000
+_0x0069._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x0069._0x007b = 0
+_0x0069._0x007c = _0x007d._0x000e(0, 0, 0.0923503935, 0)
+_0x0069._0x007e = _0x007d._0x000e(0, (142 - 58), 0, 14)
+_0x0069._0x007f = _0x0074._0x007f._0x0086
+_0x0069._0x0081 = string.char(84, 114, 105, 103, 103, 101, 114, 98, 111, 116)
+_0x0069._0x0082 = _0x0078._0x0079(124, 124, (179 - 55))
+_0x0069._0x008b = true
+_0x0069._0x0083 = (54 / 2)
+_0x0069._0x008c = true
+_0x006a._0x006f = string.char(116, 114, 105, 103, 103, 101, 114, 98, 111, 116, 95, 98, 117, 116, 116, 111, 110)
+_0x006a._0x0070 = _0x0069
+_0x006a._0x0077 = _0x0078._0x0079(49, (24 + 25), (196 / 4))
+_0x006a._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x006a._0x007b = 0
+_0x006a._0x007c = _0x007d._0x000e(1.53571427, 0, -0.214285716, 0)
+_0x006a._0x007e = _0x007d._0x000e(0, 36, 0, (9 + 10))
+_0x006a._0x007f = _0x0074._0x007f._0x0088
+_0x006a._0x0081 = ""
+_0x006a._0x0082 = _0x0078._0x0079(0, 0, 0)
+_0x006a._0x0083 = 14.000
+_0x006b._0x008f = _0x0090._0x000e(0, (5000 + 5000))
+_0x006b._0x0070 = _0x006a
+_0x006c._0x006f = string.char(116, 114, 105, 103, 103, 101, 114, 98, 111, 116, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x006c._0x0070 = _0x006a
+_0x006c._0x0077 = _0x0078._0x0079(255, (329 - 74), (127 + 128))
+_0x006c._0x007a = _0x0078._0x0079(0, 0, 0)
+_0x006c._0x007b = 0
+_0x006c._0x007c = _0x007d._0x000e(0.109999999, 0, 0.123999998, 0)
+_0x006c._0x007e = _0x007d._0x000e(0, 15, 0, (7 + 8))
+_0x006d._0x008f = _0x0090._0x000e(0, (400 / 4))
+_0x006d._0x0070 = _0x006c
+local _0x0091 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+print(_0x0078, _0x000d)
+_0x0091._0x0092 = _0x0078._0x0079(17, (34 / 2), (52 - 35))
+_0x0091._0x0070 = _0x001e
+local _0x0093 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0093._0x0092 = _0x0078._0x0079((8 + 9), (97 - 80), (8 + 9))
+_0x0093._0x0070 = _0x003f
+local _0x0094 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0094._0x0092 = _0x0078._0x0079(17, 17, (87 - 70))
+_0x0094._0x0070 = _0x005b
+local _0x0095 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0095._0x0092 = _0x0078._0x0079(17, 17, (103 - 86))
+_0x0095._0x0070 = _0x0067
+local _0x0096 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0096._0x0092 = _0x0078._0x0079(17, 17, 17)
+_0x0096._0x0070 = _0x0018
+local _0x0097 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0097._0x0092 = _0x0078._0x0079((76 - 59), 17, (80 - 63))
+_0x0097._0x0070 = _0x0011
+local _0x0098 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0098._0x0092 = _0x0078._0x0079(17, (34 / 2), (87 - 70))
+_0x0098._0x0070 = _0x0016
+local _0x0099 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x0099._0x0092 = _0x0078._0x0079(17, (34 / 2), (51 / 3))
+_0x0099._0x0070 = _0x0014
+local _0x009a = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x009a._0x0092 = _0x0078._0x0079((68 / 4), (8 + 9), (55 - 38))
+_0x009a._0x0070 = _0x0012
+local _0x009b = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x009b._0x0092 = _0x0078._0x0079((34 / 2), (67 - 50), (106 - 89))
+_0x009b._0x0070 = _0x0010
+local _0x009c = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+_0x009c._0x006f = string.char(101, 120, 112, 108, 111, 105, 116, 115, 95, 108, 97, 98, 101, 108)
+_0x009c._0x007c = _0x007d._0x000e(0.075, 0,0.296, 0)
+_0x009c._0x007e = _0x007d._0x000e(0, (645 / 3), 0, 33)
+_0x009c._0x0077 = _0x0078._0x000e(0.0313726, 0.0313726, 0.0313726)
+_0x009c._0x007b = 0
+_0x009c._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x009c._0x0081 = string.char(32, 32, 32, 101, 120, 112, 108, 111, 105, 116, 115, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32)
+_0x009c._0x0082 = _0x0078._0x000e(0.486275, 0.486275, 0.486275)
+_0x009c._0x0083 = (60 - 33)
+_0x009c._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 78, 117, 110, 105, 116, 111, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x009c._0x0070 = _0x000c
+local _0x00a2 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+_0x00a2._0x006f = string.char(101, 120, 112, 108, 111, 105, 116, 115, 95, 102, 114, 97, 97, 97, 109, 101, 95, 109, 97, 105, 110, 110)
+_0x00a2._0x007c = _0x007d._0x000e(0, 0, 1, 0)
+_0x00a2._0x007e = _0x007d._0x000e(0, (298 - 83), 0, 238)
+_0x00a2._0x0077 = _0x0078._0x000e(0.0392157, 0.0392157, 0.0392157)
+_0x00a2._0x007b = 0
+_0x00a2._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00a2._0x0070 = _0x009c
+local _0x00a3 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+_0x00a3._0x006f = string.char(101, 120, 112, 108, 111, 105, 116, 115, 95, 102, 101, 109)
+_0x00a3._0x007c = _0x007d._0x000e(0.0976061, 0, 0.0802982, 0)
+_0x00a3._0x007e = _0x007d._0x000e(0, 172, 0, 199)
+_0x00a3._0x0077 = _0x0078._0x000e(0.517647, 0.517647, 0.517647)
+_0x00a3._0x008d = 0.9800000190734863
+_0x00a3._0x007b = 0
+_0x00a3._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00a3._0x00a4 = 0.9800000190734863
+_0x00a3._0x0070 = _0x00a2
+local _0x001f = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x001f._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x001f._0x008f = _0x0090._0x000e(0, 6)
+_0x001f._0x0070 = _0x00a3
+local _0x00a5 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x00a5._0x006f = string.char(85, 73, 83, 116, 114, 111, 107, 101)
+_0x00a5._0x0092 = _0x0078._0x000e(0.0666667, 0.0666667, 0.0666667)
+_0x00a5._0x0070 = _0x00a3
+local _0x00a6 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+_0x00a6._0x006f = string.char(115, 105, 108, 101, 110, 116, 95, 114, 97, 103, 101, 95, 107, 105, 108, 108)
+_0x00a6._0x007c = _0x007d._0x000e(0, 0, 0.0689726, 0)
+_0x00a6._0x007e = _0x007d._0x000e(0, (51 + 51), 0, 14)
+_0x00a6._0x0077 = _0x0078._0x000e(1, 1, 1)
+_0x00a6._0x008d = 1
+_0x00a6._0x007b = 0
+_0x00a6._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00a6._0x00a4 = 1
+_0x00a6._0x0081 = string.char(32, 32, 83, 105, 108, 101, 110, 116, 32, 107, 105, 108, 108, 32, 97, 108, 108)
+_0x00a6._0x0082 = _0x0078._0x000e(0.486275, 0.486275, 0.486275)
+_0x00a6._0x0083 = (72 - 65)
+_0x00a6._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 73, 110, 99, 111, 110, 115, 111, 108, 97, 116, 97, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x00a6._0x008b = true
+_0x00a6._0x008c = true
+_0x00a6._0x0070 = _0x00a3
+_0x00a6._0x00a7 = 0
+local _0x00a8 = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+_0x00a8._0x006f = string.char(115, 105, 108, 101, 110, 116, 95, 114, 97, 103, 101, 95, 107, 105, 108, 108, 95, 98, 117, 116, 116, 111, 110)
+_0x00a8._0x007c = _0x007d._0x000e(1.2416, 0, -0.214286, 0)
+_0x00a8._0x007e = _0x007d._0x000e(0, 36, 0, (9 + 10))
+_0x00a8._0x0077 = _0x0078._0x000e(0.192157, 0.192157, 0.192157)
+_0x00a8._0x007b = 0
+_0x00a8._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00a8._0x0081 = ""
+_0x00a8._0x0082 = _0x0078._0x000e(0, 0, 0)
+_0x00a8._0x0083 = 14
+_0x00a8._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 83, 111, 117, 114, 99, 101, 83, 97, 110, 115, 80, 114, 111, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x00a8._0x0070 = _0x00a6
+_0x00a8._0x00a7 = 0
+local _0x00a9 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x00a9._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x00a9._0x008f = _0x0090._0x000e(0, (5000 + 5000))
+_0x00a9._0x0070 = _0x00a8
+local _0x00aa = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+_0x00aa._0x006f = string.char(115, 105, 108, 101, 110, 116, 95, 114, 97, 103, 101, 95, 107, 105, 108, 108, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x00aa._0x007c = _0x007d._0x000e(0.11, 0, 0.124, 0)
+_0x00aa._0x007e = _0x007d._0x000e(0, (30 - 15), 0, (30 / 2))
+_0x00aa._0x0077 = _0x0078._0x000e(1, 1, 1)
+_0x00aa._0x007b = 0
+_0x00aa._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00aa._0x0070 = _0x00a8
+local _0x00ab = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x00ab._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x00ab._0x008f = _0x0090._0x000e(0, (153 - 53))
+_0x00ab._0x0070 = _0x00aa
+local _0x00ac = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+_0x00ac._0x006f = string.char(115, 105, 108, 101, 110, 116, 95, 114, 97, 103, 101, 95, 107, 105, 108, 108)
+_0x00ac._0x007c = _0x007d._0x000e(0, 0, 0.219727, 0)
+_0x00ac._0x007e = _0x007d._0x000e(0, (508 / 4), 0, 21)
+_0x00ac._0x0077 = _0x0078._0x000e(1, 1, 1)
+_0x00ac._0x008d = 1
+_0x00ac._0x007b = 0
+_0x00ac._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00ac._0x00a4 = 1
+_0x00ac._0x0081 = string.char(32, 83, 105, 108, 101, 110, 116, 32, 1040, 1042, 1058, 1040, 1052, 1040, 1041, 1048, 1051, 1048, 32, 1056, 1040, 1047, 1068, 1045, 1041)
+_0x00ac._0x0082 = _0x0078._0x000e(0.486275, 0.486275, 0.486275)
+_0x00ac._0x0083 = (76 - 69)
+_0x00ac._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 73, 110, 99, 111, 110, 115, 111, 108, 97, 116, 97, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x00ac._0x008b = true
+_0x00ac._0x008c = true
+_0x00ac._0x0070 = _0x00a3
+_0x00ac._0x00a7 = 0
+local _0x00ad = _0x000d._0x000e(string.char(84, 101, 120, 116, 66, 117, 116, 116, 111, 110))
+_0x00ad._0x006f = string.char(115, 105, 108, 101, 110, 116, 95, 114, 97, 103, 101, 95, 107, 105, 108, 108, 95, 98, 117, 116, 116, 111, 110)
+_0x00ad._0x007c = _0x007d._0x000e(1.00816, 0, 0.0714286, 0)
+_0x00ad._0x007e = _0x007d._0x000e(0, 36, 0, (76 / 4))
+_0x00ad._0x0077 = _0x0078._0x000e(0.192157, 0.192157, 0.192157)
+_0x00ad._0x007b = 0
+_0x00ad._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00ad._0x0081 = ""
+_0x00ad._0x0082 = _0x0078._0x000e(0, 0, 0)
+_0x00ad._0x0083 = (39 - 25)
+_0x00ad._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 83, 111, 117, 114, 99, 101, 83, 97, 110, 115, 80, 114, 111, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x00ad._0x0070 = _0x00ac
+_0x00ad._0x00a7 = 0
+local _0x00ae = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x00ae._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x00ae._0x008f = _0x0090._0x000e(0, (5000 + 5000))
+_0x00ae._0x0070 = _0x00ad
+local _0x00af = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+_0x00af._0x006f = string.char(115, 105, 108, 101, 110, 116, 95, 114, 97, 103, 101, 95, 107, 105, 108, 108, 95, 102, 114, 97, 109, 101, 95, 107, 110, 111, 112, 107, 97)
+_0x00af._0x007c = _0x007d._0x000e(0.11, 0, 0.0723684, 0)
+_0x00af._0x007e = _0x007d._0x000e(0, (45 / 3), 0, 15)
+_0x00af._0x0077 = _0x0078._0x000e(1, 1, 1)
+_0x00af._0x007b = 0
+_0x00af._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00af._0x0070 = _0x00ad
+local _0x00b0 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x00b0._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x00b0._0x008f = _0x0090._0x000e(0, (187 - 87))
+_0x00b0._0x0070 = _0x00af
+local _0x00b1 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+_0x00b1._0x006f = string.char(70, 114, 97, 109, 101)
+_0x00b1._0x007c = _0x007d._0x000e(0, 0, 1, 0)
+_0x00b1._0x007e = _0x007d._0x000e(0, 215, 0.02, 0)
+_0x00b1._0x0077 = _0x0078._0x000e(0.0980392, 0.0980392, 0.0980392)
+_0x00b1._0x007b = 0
+_0x00b1._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00b1._0x0070 = _0x009c
+local _0x00b2 = _0x000d._0x000e(string.char(70, 114, 97, 109, 101))
+_0x00b2._0x006f = string.char(105, 110, 102, 111, 115)
+_0x00b2._0x007c = _0x007d._0x000e(0.0167696, 0, 0.0500715, 0)
+_0x00b2._0x007e = _0x007d._0x000e(0, (452 / 2), 0, 45)
+_0x00b2._0x0077 = _0x0078._0x000e(0.0313726, 0.0313726, 0.0313726)
+_0x00b2._0x007b = 0
+_0x00b2._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00b2._0x0070 = _0x000c
+local _0x00b3 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x00b3._0x006f = string.char(85, 73, 83, 116, 114, 111, 107, 101)
+_0x00b3._0x0092 = _0x0078._0x000e(0.0980392, 0.0980392, 0.0980392)
+_0x00b3._0x0070 = _0x00b2
+_0x00b3._0x00a4 = 0
+local _0x00b4 = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+_0x00b4._0x006f = string.char(111, 114, 99, 104, 95, 110, 97, 109, 101, 95, 97, 108, 101, 95, 118, 101, 114, 115, 105, 110, 105, 110, 110, 110)
+_0x00b4._0x007e = _0x007d._0x000e(0, 226, 0, 25)
+_0x00b4._0x0077 = _0x0078._0x000e(0.0392157, 0.0392157, 0.0392157)
+_0x00b4._0x007b = 0
+_0x00b4._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00b4._0x0081 = string.char(91, 111, 114, 99, 104, 105, 100, 101, 97, 32, 86, 49, 46, 51, 93)
+_0x00b4._0x0082 = _0x0078._0x000e(0.709804, 0.709804, 0.709804)
+_0x00b4._0x0083 = 14
+_0x00b4._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 83, 111, 117, 114, 99, 101, 83, 97, 110, 115, 80, 114, 111, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x00b4._0x008b = true
+_0x00b4._0x008c = true
+_0x00b4._0x0070 = _0x00b2
+_0x00b4._0x00a4 = 1
+_0x00b4._0x00a7 = 0
+_0x00b4._0x00b5 = 1
+local _0x00b6 = _0x000d._0x000e(string.char(85, 73, 83, 116, 114, 111, 107, 101))
+_0x00b6._0x006f = string.char(85, 73, 83, 116, 114, 111, 107, 101)
+_0x00b6._0x0092 = _0x0078._0x000e(0.0980392, 0.0980392, 0.0980392)
+_0x00b6._0x00b7 = _0x0074._0x00b7._0x00b8
+_0x00b6._0x0070 = _0x00b4
+local _0x00b9 = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x00b9._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x00b9._0x008f = _0x0090._0x000e(0, (8 / 2))
+_0x00b9._0x0070 = _0x00b4
+local _0x00ba = _0x000d._0x000e(string.char(84, 101, 120, 116, 76, 97, 98, 101, 108))
+_0x00ba._0x006f = string.char(102, 112, 115, 95, 112, 105, 110, 103, 95, 105, 110, 102)
+_0x00ba._0x007c = _0x007d._0x000e(0, 0, 0.568777, 0)
+_0x00ba._0x007e = _0x007d._0x000e(0, 226, 0, 19)
+_0x00ba._0x0077 = _0x0078._0x000e(1, 1, 1)
+_0x00ba._0x008d = 1
+_0x00ba._0x007b = 0
+_0x00ba._0x007a = _0x0078._0x000e(0, 0, 0)
+_0x00ba._0x00a4 = 1
+_0x00ba._0x0081 = string.char(102, 112, 115, 58, 32, 102, 112, 115, 44, 32, 112, 105, 110, 103, 58, 32, 112, 105, 110, 103, 109, 115)
+_0x00ba._0x0082 = _0x0078._0x000e(0.309804, 0.309804, 0.309804)
+_0x00ba._0x0083 = (68 - 49)
+_0x00ba._0x009d = _0x007f._0x000e(string.char(114, 98, 120, 97, 115, 115, 101, 116, 58, 47, 47, 102, 111, 110, 116, 115, 47, 102, 97, 109, 105, 108, 105, 101, 115, 47, 83, 111, 117, 114, 99, 101, 83, 97, 110, 115, 80, 114, 111, 46, 106, 115, 111, 110), _0x0074._0x009e._0x009f, _0x0074._0x00a0._0x00a1)
+_0x00ba._0x008c = true
+_0x00ba._0x0070 = _0x00b2
+_0x00ba._0x00a7 = 0
+local _0x00bb = _0x000d._0x000e(string.char(85, 73, 67, 111, 114, 110, 101, 114))
+_0x00bb._0x006f = string.char(85, 73, 67, 111, 114, 110, 101, 114)
+_0x00bb._0x008f = _0x0090._0x000e(0, (16 / 4))
+_0x00bb._0x0070 = _0x00b2
+local _0x00bc = {
+_0x00bd = false,
+_0x00be = false,
+_0x00bf = string.char(72, 101, 97, 100),
+_0x00c0 = 0.01,
+_0x00c1 = 0.01,
+_0x00c2 = (35 + 35),
+_0x00c3 = false,
+_0x00c4 = false,
 }
-
-local misc_cfg = {
-	fly = false,
-	flySpeed = 45,
-	customFov = false,
-	customFovValue = 100,
-	spinbot = false,
-	thirdPerson = false,
-	hitsound = false,
-	autoCollect = false,
+local _0x00c5 = {
+_0x00c6 = false,
+_0x00c7 = 45,
+_0x00c8 = false,
+_0x00c9 = (200 / 2),
+_0x00ca = false,
+_0x00cb = false,
+_0x00cc = false,
+_0x00cd = false,
+_0x00ce = false,
 }
-
-local esp_cfg = {
-	espEnabled = true ,
-
-	espBoxColor = Color3.fromRGB(255, 88, 238),
-	espOutlineBoxColor = Color3.fromRGB(0,0,0),
-
-	chamsEsp = {
-		Enabled = true,
-		FillColor = Color3.fromRGB(115, 16, 94),
-		OutlineColor = Color3.fromRGB(139, 26, 96),
-		FillTransparency = 0,
-		OutlineTransparency = 0,
-	},
-
-	boxEsp = {
-		Enabled = false,
-		Transparency = 0,
-		Thickness = 1,
-	},
-
-	boxOutlineEsp = {
-		Thickness = 2.5,
-		Transparency = 0,
-	},
-
-	hpBarEsp = {
-		Enabled = false,
-		hp_text = true,
-		HighHp = Color3.fromRGB(0,255,0),
-		LowHp = Color3.fromRGB(255,0,0),
-		hp_bar = true,
-	},
-
-	nicknameEsp = {
-		Enabled = false,
-		Transparency = 0,
-		Color = Color3.fromRGB(255,255,255),
-		OutlineColor = Color3.fromRGB(0,0,0),
-	},
-
-	tracersEsp = {
-		Enabled = false,
-		Transparency = 0,
-		Color = Color3.fromRGB(155, 54, 145),
-		Thickness = 2
-	},
+local _0x00cf = {
+_0x00d0 = true ,
+_0x00d1 = _0x0078._0x0079((316 - 61), (264 / 3), 238),
+_0x00d2 = _0x0078._0x0079(0,0,0),
+_0x00d3 = {
+_0x00d4 = true,
+_0x00d5 = _0x0078._0x0079((199 - 84), (32 / 2), (376 / 4)),
+_0x00d6 = _0x0078._0x0079((157 - 18), 26, (132 - 36)),
+_0x00d7 = 0.3,
+_0x00d8 = 0.3,
+},
+_0x00d9 = {
+_0x00d4 = false,
+_0x00a4 = 0,
+_0x00da = 1,
+},
+_0x00db = {
+_0x00da = 2.5,
+_0x00a4 = 0,
+},
+_0x00dc = {
+_0x00d4 = false,
+_0x00dd = true,
+_0x00de = _0x0078._0x0079(0,(127 + 128),0),
+_0x00df = _0x0078._0x0079(255,0,0),
+_0x00e0 = true,
+},
+_0x00e1 = {
+_0x00d4 = false,
+_0x00a4 = 0,
+_0x0092 = _0x0078._0x0079(255,255,255),
+_0x00d6 = _0x0078._0x0079(0,0,0),
+},
+_0x00e2 = {
+_0x00d4 = false,
+_0x00a4 = 0,
+_0x0092 = _0x0078._0x0079((172 - 57), (99 - 83), 94),
+_0x00da = 1.2
+},
 }
-
-local gui_cfg = {
-	section_button_transp = 0.4,
-
-	highlights = {
-		legitbot_highlight_button,
-		visuals_highlight_button,
-		misc_highlight_button,
-	},
-
-	colors_section_bttns = {
-		open= Color3.fromRGB(21, 21, 21),
-		close=Color3.fromRGB(8, 8, 8),
-	},
-
-	buttons_fc_pos = {
-		enabled = UDim2.new(0.5, 0,0.124, 0),
-		disabled= UDim2.new(0.11, 0,0.124, 0),
-	},
-	
-	buttons_fc_col = {
-		enabled = Color3.fromRGB(107, 107, 107),
-		disabled =Color3.fromRGB(49, 49, 49),
-	}
-
+local _0x00e3 = {
+_0x00e4 = 0.4,
+_0x00e5 = {
+_0x0013,
+_0x0017,
+_0x0015,
+},
+_0x00e6 = {
+_0x00e7= _0x0078._0x0079((53 - 32), (10 + 11), 21),
+_0x00e8=_0x0078._0x0079((4 + 4), (97 - 89), 8),
+},
+_0x00e9 = {
+_0x00ea = _0x007d._0x000e(0.5, 0,0.124, 0),
+_0x00eb= _0x007d._0x000e(0.11, 0,0.124, 0),
+},
+_0x00ec = {
+_0x00ea = _0x0078._0x0079((119 - 12), (53 + 54), (214 / 2)),
+_0x00eb =_0x0078._0x0079((196 / 4), (129 - 80), 49),
 }
-
-
-local function SelectedSection(selected)
-	visuals_section.Visible = false
-	misc_section.Visible = false
-	legitbot_section.Visible = false
-
-	for _, element in pairs(gui_cfg.highlights) do
-		element.Visible = false
-	end
-
-	if selected == "visual" then
-		visuals_section.Visible = true
-		visuals_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.open
-		misc_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.close
-		legitbot_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.close
-		gui_cfg.highlights[2].Visible = true
-	end
-
-	if selected == "misc" then
-		misc_section.Visible = true
-		legitbot_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.close
-		visuals_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.close
-		misc_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.open
-		gui_cfg.highlights[3].Visible = true
-	end
-	
-	if selected == "legit" then
-		legitbot_section.Visible = true
-		visuals_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.close
-		misc_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.close
-		legitbot_btn.BackgroundColor3 = gui_cfg.colors_section_bttns.open
-		gui_cfg.highlights[1].Visible = true
-	end 
+}
+local function _0x00ed(_0x00ee)
+_0x003e._0x0087 = false
+_0x001a._0x0087 = false
+_0x005a._0x0087 = false
+for _0x00ef, _0x00f0 in pairs(_0x00e3._0x00e5) do
+_0x00f0._0x0087 = false
 end
-
-local UIS = game:GetService('UserInputService')
-local frame = alo
-local dragBar = alo
-local dragToggle = nil
-local dragSpeed = 0.1
-local dragStart = nil
-local startPos = nil
-local plr = game:GetService("Players").LocalPlayer
-local camera = workspace.CurrentCamera
-local plrs = game:GetService("Players")
-local ts = game:GetService("TweenService")
-
-local function updateInput(input)
-	local delta = input.Position - dragStart
-	local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-		startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+if (true or false) and _0x00ee == string.char(118, 105, 115, 117, 97, 108) then
+_0x003e._0x0087 = true
+_0x0016._0x0077 = _0x00e3._0x00e6._0x00e7
+_0x0014._0x0077 = _0x00e3._0x00e6._0x00e8
+_0x0012._0x0077 = _0x00e3._0x00e6._0x00e8
+_0x00e3._0x00e5[2]._0x0087 = true
 end
-
-frame.InputBegan:Connect(function(input)
-	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-		dragToggle = true
-		dragStart = input.Position
-		startPos = frame.Position
-		input.Changed:Connect(function()
-			if input.UserInputState == Enum.UserInputState.End then
-				dragToggle = false
-			end
-		end)
-	end
+if _0x00ee == string.char(109, 105, 115, 99) then
+_0x001a._0x0087 = true
+_0x0012._0x0077 = _0x00e3._0x00e6._0x00e8
+_0x0016._0x0077 = _0x00e3._0x00e6._0x00e8
+_0x0014._0x0077 = _0x00e3._0x00e6._0x00e7
+_0x00e3._0x00e5[3]._0x0087 = true
+end
+if _0x00ee == string.char(108, 101, 103, 105, 116) then
+_0x005a._0x0087 = true
+_0x0016._0x0077 = _0x00e3._0x00e6._0x00e8
+_0x0014._0x0077 = _0x00e3._0x00e6._0x00e8
+_0x0012._0x0077 = _0x00e3._0x00e6._0x00e7
+_0x00e3._0x00e5[1]._0x0087 = true
+end
+end
+local _0x00f1 = _0x0005:_0x0006(string.char(85, 115, 101, 114, 73, 110, 112, 117, 116, 83, 101, 114, 118, 105, 99, 101))
+local _0x00f2 = _0x000f
+local _0x00f3 = _0x000f
+local _0x00f4 = nil
+local _0x00f5 = 0.1
+local _0x00f6 = nil
+local _0x00f7 = nil
+local _0x00f8 = _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))._0x0007
+local _0x00f9 = _0x00fa._0x00fb
+local _0x00fc = _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))
+local _0x00fd = _0x0005:_0x0006(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x00fe = _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))._0x0007
+local function _0x00ff(_0x0100)
+local _0x0101 = _0x0100._0x007c - _0x00f6
+local _0x0102 = _0x007d._0x000e(_0x00f7._0x0103._0x0104, _0x00f7._0x0103._0x0105 + _0x0101._0x0103,
+_0x00f7._0x0106._0x0104, _0x00f7._0x0106._0x0105 + _0x0101._0x0106)
+_0x0005:_0x0006(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101)):_0x0107(_0x00f2, _0x0108._0x000e(_0x00f5), {_0x007c = _0x0102}):_0x0109()
+end
+_0x00f2._0x010a:_0x010b(function(_0x0100)
+if (1 + 1 == 2) and (_0x0100._0x010c == _0x0074._0x010c._0x010d or _0x0100._0x010c == _0x0074._0x010c._0x010e) then
+_0x00f4 = true
+_0x00f6 = _0x0100._0x007c
+_0x00f7 = _0x00f2._0x007c
+_0x0100._0x010f:_0x010b(function()
+if (5 == 5) and _0x0100._0x0110 == _0x0074._0x0110._0x0111 then
+_0x00f4 = false
+end
 end)
-
-UIS.InputChanged:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-		if dragToggle then
-			updateInput(input)
-		end
-	end
+end
 end)
-
-
-UIS.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Insert then
-		if alo.Visible == true then
-			alo.Visible = false
-		else
-			alo.Visible = true
-		end
-	end
+_0x00f1._0x0112:_0x010b(function(_0x0100)
+if _0x0100._0x010c == _0x0074._0x010c._0x0113 or _0x0100._0x010c == _0x0074._0x010c._0x010e then
+if _0x00f4 then
+_0x00ff(_0x0100)
+end
+end
 end)
-
---CloseButton.MouseButton1Click:Connect(function()
---	alo.Visible = false
---end)
-
-
-
-local function setupPlayerAvatar()
-	local player = game.Players.LocalPlayer
-	local userId = player.UserId
-
-	local thumbnailType = Enum.ThumbnailType.AvatarThumbnail
-	local thumbnailSize = Enum.ThumbnailSize.Size420x420
-
-	game:GetService("Players"):GetUserThumbnailAsync(userId, thumbnailType, thumbnailSize)
-
-
-	ImageLabel.Image = string.format("https://www.roblox.com/headshot-thumbnail/image?userId=%d&width=420&height=420&format=png", userId)
-
+_0x00f1._0x010a:_0x010b(function(_0x0100)
+if (1 + 1 == 2) and _0x0100._0x0114 == _0x0074._0x0114._0x0115 then
+if (5 == 5) and _0x000f._0x0087 == true then
+_0x000f._0x0087 = false
+else
+_0x000f._0x0087 = true
 end
-
-SelectedSection("misc")
-
-visuals_btn.MouseButton1Click:Connect(function()
-	SelectedSection("visual")
+end
 end)
-
-misc_btn.MouseButton1Click:Connect(function()
-	SelectedSection("misc")
+local _0x0116 = nil
+local _0x0117 = 0.2
+local _0x0118 = nil
+local _0x0119 = nil
+local _0x011a = _0x009c
+local _0x011b = _0x009c
+local function _0x011c(_0x0100)
+local _0x0101 = _0x0100._0x007c - _0x0118
+local _0x0102 = _0x007d._0x000e(_0x0119._0x0103._0x0104, _0x0119._0x0103._0x0105 + _0x0101._0x0103,
+_0x0119._0x0106._0x0104, _0x0119._0x0106._0x0105 + _0x0101._0x0106)
+_0x0005:_0x0006(string.char(84, 119, 101, 101, 110, 83, 101, 114, 118, 105, 99, 101)):_0x0107(_0x011a, _0x0108._0x000e(_0x0117), {_0x007c = _0x0102}):_0x0109()
+end
+_0x011a._0x010a:_0x010b(function(_0x0100)
+if (_0x0100._0x010c == _0x0074._0x010c._0x010d or _0x0100._0x010c == _0x0074._0x010c._0x010e) then
+_0x0116 = true
+_0x0118 = _0x0100._0x007c
+_0x0119 = _0x011a._0x007c
+_0x0100._0x010f:_0x010b(function()
+if (1 + 1 == 2) and _0x0100._0x0110 == _0x0074._0x0110._0x0111 then
+_0x0116 = false
+end
 end)
-
-legitbot_btn.MouseButton1Click:Connect(function()
-	SelectedSection("legit")
+end
 end)
-
-setupPlayerAvatar()
-player_welcome.Text = "Welcome "..plr.Name.."!"
-executor = (identifyexecutor and identifyexecutor()) or (getexecutorname and getexecutorname()) or "#unknown"
-curr_executor.Text = executor.." executorr"
---functions
-
-
-
-local RunService = game:GetService("RunService")
-
-local tracerLines = {}
-local tracerConnection = nil
-
-   local function createTracer(player)
-	if player == plr then return end
-	if tracerLines[player] then return end
-
-	local line = Drawing.new("Line")
-	line.Color = esp_cfg.tracersEsp.Color
-	line.Thickness = esp_cfg.tracersEsp.Thickness
-	line.Transparency = 1
-	line.Visible = false
-
-	tracerLines[player] = line
+_0x00f1._0x0112:_0x010b(function(_0x0100)
+if _0x0100._0x010c == _0x0074._0x010c._0x0113 or _0x0100._0x010c == _0x0074._0x010c._0x010e then
+if (true or false) and _0x0116 then
+_0x011c(_0x0100)
 end
-
-local function removeTracer(player)
-	if tracerLines[player] then
-		tracerLines[player]:Remove()
-		tracerLines[player] = nil
-	end
 end
-
-local function startTracerLoop()
-	if tracerConnection then return end
-
-	tracerConnection = RunService.RenderStepped:Connect(function()
-		if not esp_cfg.tracersEsp.Enabled then
-			for _, line in pairs(tracerLines) do
-				line.Visible = false
-			end
-			return
-		end
-
-		local center = Vector2.new(
-			camera.ViewportSize.X / 2,
-			camera.ViewportSize.Y
-		)
-
-		for player, line in pairs(tracerLines) do
-			local character = player.Character
-			local hrp = character and character:FindFirstChild("HumanoidRootPart")
-			local humanoid = character and character:FindFirstChild("Humanoid")
-
-			if not hrp or not humanoid or humanoid.Health <= 0 then
-				line.Visible = false
-				continue
-			end
-
-			local pos, onScreen = camera:WorldToViewportPoint(hrp.Position)
-
-			if onScreen then
-				line.From = center
-				line.To = Vector2.new(pos.X, pos.Y)
-				line.Visible = true
-			else
-				line.Visible = false
-			end
-		end
-	end)
-end
-
-for _, player in ipairs(plrs:GetPlayers()) do
-	createTracer(player)
-end
-
-plrs.PlayerAdded:Connect(function(player)
-	createTracer(player)
 end)
-
-plrs.PlayerRemoving:Connect(function(player)
-	removeTracer(player)
+_0x00f1._0x010a:_0x010b(function(_0x0100)
+if (1 + 1 == 2) and _0x0100._0x0114 == _0x0074._0x0114._0x0115 then
+if (true or false) and _0x009c._0x0087 == true then
+_0x009c._0x0087 = false
+_0x00c5._0x00ce = false
+else
+_0x009c._0x0087 = true
+_0x00c5._0x00ce = true
+end
+end
 end)
-
-
-function tracers_function()
-	if esp_cfg.tracersEsp.Enabled then
-		startTracerLoop()
-	else
-		for _, line in pairs(tracerLines) do
-			line.Visible = false
-		end
-	end
+local function _0x011f()
+local _0x00fe = _0x0005._0x0071._0x0007
+local _0x0120 = _0x00fe._0x0121
+local _0x0122 = _0x0074._0x0123._0x0124
+local _0x0125 = _0x0074._0x0126._0x0127
+_0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115)):_0x0128(_0x0120, _0x0122, _0x0125)
+_0x001c._0x008e = string.format(string.char(104, 116, 116, 112, 115, 58, 47, 47, 119, 119, 119, 46, 114, 111, 98, 108, 111, 120, 46, 99, 111, 109, 47, 104, 101, 97, 100, 115, 104, 111, 116, 45, 116, 104, 117, 109, 98, 110, 97, 105, 108, 47, 105, 109, 97, 103, 101, 63, 117, 115, 101, 114, 73, 100, 61, 37, 100, 38, 119, 105, 100, 116, 104, 61, 40, 56, 52, 48, 32, 47, 32, 50, 41, 38, 104, 101, 105, 103, 104, 116, 61, 52, 50, 48, 38, 102, 111, 114, 109, 97, 116, 61, 112, 110, 103), _0x0120)
 end
-
---// ================== UTILS ==================
-function LPH_NO_VIRTUALIZE(f) return f end
-
-local RainbowSpeed = 0.25
-local function GetRGB(offset)
-	return Color3.fromHSV((tick()+(offset or 0)) * RainbowSpeed % 1, 1, 1)
+_0x00ed(string.char(109, 105, 115, 99))
+_0x0016._0x011e:_0x010b(function()
+_0x00ed(string.char(118, 105, 115, 117, 97, 108))
+end)
+_0x0014._0x011e:_0x010b(function()
+_0x00ed(string.char(109, 105, 115, 99))
+end)
+_0x0012._0x011e:_0x010b(function()
+_0x00ed(string.char(108, 101, 103, 105, 116))
+end)
+_0x011f()
+_0x001b._0x0081 = string.char(87, 101, 108, 99, 111, 109, 101, 32).._0x00f8._0x006f..string.char(33)
+_0x0129 = (_0x012a and _0x012a()) or (_0x012b and _0x012b()) or string.char(35, 117, 110, 107, 110, 111, 119, 110)
+_0x001d._0x0081 = _0x0129..string.char(32, 101, 120, 101, 99, 117, 116, 111, 114, 114)
+local _0x012d = _0x0005:_0x0006(string.char(82, 117, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x012e = _0x00fe:_0x012f()
+local _0x0130 = {}
+local _0x0131 = nil
+local function _0x0132(_0x00fe)
+if (5 == 5) and _0x00fe == _0x00f8 then return end
+if _0x0130[_0x00fe] then return end
+local _0x0133 = _0x0134._0x000e(string.char(76, 105, 110, 101))
+_0x0133._0x0092 = _0x00cf._0x00e2._0x0092
+_0x0133._0x00da = _0x00cf._0x00e2._0x00da
+_0x0133._0x00a4 = 1
+_0x0133._0x0087 = false
+_0x0130[_0x00fe] = _0x0133
 end
-
-local function lerpColor(c1, c2, t)
-	return Color3.new(
-		c1.R + (c2.R - c1.R) * t,
-		c1.G + (c2.G - c1.G) * t,
-		c1.B + (c2.B - c1.B) * t
-	)
+local function _0x0135(_0x00fe)
+if _0x0130[_0x00fe] then
+_0x0130[_0x00fe]:_0x0136()
+_0x0130[_0x00fe] = nil
 end
-
---// ================== SERVICES ==================
-local Players = game:GetService("Players")
-local Camera = workspace.CurrentCamera
-local LP = Players.LocalPlayer
-
---// ================== ESP STORAGE ==================
-local boxes = {}
-
-local function getCorners(part)
-	local s = part.Size / 2
-	local cf = part.CFrame
-	return {
-		(cf * CFrame.new( s.X,  s.Y,  s.Z)).Position,
-		(cf * CFrame.new(-s.X,  s.Y,  s.Z)).Position,
-		(cf * CFrame.new( s.X, -s.Y,  s.Z)).Position,
-		(cf * CFrame.new(-s.X, -s.Y,  s.Z)).Position,
-		(cf * CFrame.new( s.X,  s.Y, -s.Z)).Position,
-		(cf * CFrame.new(-s.X,  s.Y, -s.Z)).Position,
-		(cf * CFrame.new( s.X, -s.Y, -s.Z)).Position,
-		(cf * CFrame.new(-s.X, -s.Y, -s.Z)).Position,
-	}
 end
-
-local function removeESP(name)
-	local box = boxes[name]
-	if not box then return end
-	for _,v in ipairs(box.drawings) do
-		pcall(function() v:Remove() end)
-	end
-	boxes[name] = nil
+local function _0x0137()
+if (5 == 5) and _0x0131 then return end
+_0x0131 = _0x012d._0x0138:_0x010b(function()
+if not _0x00cf._0x00e2._0x00d4 then
+for _0x00ef, _0x0133 in pairs(_0x0130) do
+_0x0133._0x0087 = false
 end
-
---// ================== ESP CORE ==================
-local function espint(plr)
-	if not esp_cfg.espEnabled or plr == LP then
-		removeESP(plr.Name)
-		return
-	end
-
-	local char = plr.Character
-	if not char then removeESP(plr.Name) return end
-
-	local hum = char:FindFirstChildOfClass("Humanoid")
-	if not hum or hum.Health <= 0 then
-		removeESP(plr.Name)
-		return
-	end
-
-	-- Highlight (chams)
-	local hl = char:FindFirstChild("ESP_CHAMS")
-	if not hl then
-		hl = Instance.new("Highlight")
-		hl.Name = "ESP_CHAMS"
-		hl.Parent = char
-	end
-
-	hl.Enabled = esp_cfg.chamsEsp.Enabled
-	if hl.Enabled then
-		hl.FillColor = esp_cfg.chamsEsp.FillColor
-		hl.OutlineColor = esp_cfg.chamsEsp.OutlineColor
-		hl.FillTransparency = esp_cfg.chamsEsp.FillTransparency
-		hl.OutlineTransparency = esp_cfg.chamsEsp.OutlineTransparency
-	end
-
-	-- create drawings
-	if not boxes[plr.Name] then
-		local box = Drawing.new("Square")
-		box.Filled = false
-
-		local name = Drawing.new("Text")
-		name.Center = true
-		name.Outline = true
-		name.Size = 16
-
-		local hpO = Drawing.new("Square")
-		hpO.Filled = false
-		hpO.Color = esp_cfg.espOutlineBoxColor
-
-		local hpF = Drawing.new("Square")
-		hpF.Filled = true
-
-		local hpT = Drawing.new("Text")
-		hpT.Outline = true
-		hpT.Size = 13
-
-		boxes[plr.Name] = {
-			box = box,
-			name = name,
-			hpO = hpO,
-			hpF = hpF,
-			hpT = hpT,
-			drawings = {box,name,hpO,hpF,hpT}
-		}
-	end
-
-	local e = boxes[plr.Name]
-
-	-- bounding
-	local minX,minY = math.huge,math.huge
-	local maxX,maxY = -math.huge,-math.huge
-	local visible = false
-
-	for _,p in ipairs(char:GetChildren()) do
-		if p:IsA("BasePart") then
-			for _,c in ipairs(getCorners(p)) do
-				local v,on = Camera:WorldToViewportPoint(c)
-				if on and v.Z > 0 then
-					visible = true
-					minX = math.min(minX,v.X)
-					minY = math.min(minY,v.Y)
-					maxX = math.max(maxX,v.X)
-					maxY = math.max(maxY,v.Y)
-				end
-			end
-		end
-	end
-
-	if not visible then
-		for _,d in ipairs(e.drawings) do d.Visible = false end
-		return
-	end
-
-	local w,h = maxX-minX, maxY-minY
-
-	-- BOX
-	e.box.Visible = esp_cfg.boxEsp.Enabled
-	if e.box.Visible then
-		e.box.Position = Vector2.new(minX,minY)
-		e.box.Size = Vector2.new(w,h)
-		e.box.Color = esp_cfg.espBoxColor
-		e.box.Thickness = esp_cfg.boxEsp.Thickness
-		e.box.Transparency = 1 - esp_cfg.boxEsp.Transparency
-	end
-
-	-- NAME
-	e.name.Visible = esp_cfg.nicknameEsp.Enabled
-	if e.name.Visible then
-		e.name.Text = plr.Name
-		e.name.Position = Vector2.new(minX+w/2, minY-18)
-		e.name.Color = esp_cfg.nicknameEsp.Color
-		e.name.Transparency = 1 - esp_cfg.nicknameEsp.Transparency
-		e.name.OutlineColor = esp_cfg.nicknameEsp.OutlineColor
-	end
-
-	-- HP (Humanoid)
-	local perc = math.clamp(hum.Health/hum.MaxHealth,0,1)
-	local hpColor = lerpColor(
-		esp_cfg.hpBarEsp.LowHp,
-		esp_cfg.hpBarEsp.HighHp,
-		perc
-	)
-
-	e.hpO.Visible = esp_cfg.hpBarEsp.Enabled
-	e.hpF.Visible = esp_cfg.hpBarEsp.Enabled
-	e.hpT.Visible = esp_cfg.hpBarEsp.Enabled and esp_cfg.hpBarEsp.hp_text
-
-	if e.hpO.Visible then
-		e.hpO.Position = Vector2.new(minX-6,minY)
-		e.hpO.Size = Vector2.new(4,h)
-	end
-
-	if e.hpF.Visible then
-		e.hpF.Size = Vector2.new(2,h*perc)
-		e.hpF.Position = Vector2.new(minX-5, minY+(h-h*perc))
-		e.hpF.Color = hpColor
-	end
-
-	if e.hpT.Visible then
-		e.hpT.Text = tostring(math.floor(hum.Health))
-		e.hpT.Color = hpColor
-		e.hpT.Position = Vector2.new(minX-25, minY+(h-h*perc))
-	end
+return
 end
-
---// ================== LOOP ==================
-RunService.RenderStepped:Connect(LPH_NO_VIRTUALIZE(function()
-	for _,plr in ipairs(Players:GetPlayers()) do
-		espint(plr)
-	end
+local _0x0139 = _0x013a._0x000e(
+_0x00f9._0x013b._0x0103 / 2,
+_0x00f9._0x013b._0x0106
+)
+for _0x00fe, _0x0133 in pairs(_0x0130) do
+local _0x013c = _0x00fe._0x013d
+local _0x013e = _0x013c and _0x013c:_0x0009(string.char(72, 117, 109, 97, 110, 111, 105, 100, 82, 111, 111, 116, 80, 97, 114, 116))
+local _0x013f = _0x013c and _0x013c:_0x0009(string.char(72, 117, 109, 97, 110, 111, 105, 100))
+if not _0x013e or not _0x013f or _0x013f._0x0140 <= 0 then
+_0x0133._0x0087 = false
+end
+local _0x0142, _0x0143 = _0x00f9:_0x0144(_0x013e._0x007c)
+if (true or false) and _0x0143 then
+_0x0133._0x0145 = _0x0139
+_0x0133._0x0146 = _0x013a._0x000e(_0x0142._0x0103, _0x0142._0x0106)
+_0x0133._0x0087 = true
+else
+_0x0133._0x0087 = false
+end
+end
+end)
+end
+for _0x00ef, _0x00fe in ipairs(_0x00fc:_0x0147()) do
+_0x0132(_0x00fe)
+end
+_0x00fc._0x0148:_0x010b(function(_0x00fe)
+_0x0132(_0x00fe)
+end)
+_0x00fc._0x0149:_0x010b(function(_0x00fe)
+_0x0135(_0x00fe)
+end)
+function _0x014a()
+if (1 + 1 == 2) and _0x00cf._0x00e2._0x00d4 then
+_0x0137()
+else
+for _0x00ef, _0x0133 in pairs(_0x0130) do
+_0x0133._0x0087 = false
+end
+end
+end
+function _0x014b(_0x014c) return _0x014c end
+local _0x014d = 0.25
+local function _0x014e(_0x014f)
+return _0x0078._0x0150((_0x0151()+(_0x014f or 0)) * _0x014d % 1, 1, 1)
+end
+local function _0x0152(_0x0153, _0x0154, _0x0155)
+return _0x0078._0x000e(
+_0x0153._0x0156 + (_0x0154._0x0156 - _0x0153._0x0156) * _0x0155,
+_0x0153._0x0157 + (_0x0154._0x0157 - _0x0153._0x0157) * _0x0155,
+_0x0153._0x0158 + (_0x0154._0x0158 - _0x0153._0x0158) * _0x0155
+)
+end
+local _0x0071 = _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))
+local _0x0159 = _0x00fa._0x00fb
+local _0x015a = _0x0071._0x0007
+local _0x015b = {}
+local function _0x015c(_0x015d)
+local _0x015e = _0x015d._0x007e / 2
+local _0x015f = _0x015d._0x0160
+return {
+(_0x015f * _0x0160._0x000e( _0x015e._0x0103,  _0x015e._0x0106,  _0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e(-_0x015e._0x0103,  _0x015e._0x0106,  _0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e( _0x015e._0x0103, -_0x015e._0x0106,  _0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e(-_0x015e._0x0103, -_0x015e._0x0106,  _0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e( _0x015e._0x0103,  _0x015e._0x0106, -_0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e(-_0x015e._0x0103,  _0x015e._0x0106, -_0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e( _0x015e._0x0103, -_0x015e._0x0106, -_0x015e._0x0161))._0x007c,
+(_0x015f * _0x0160._0x000e(-_0x015e._0x0103, -_0x015e._0x0106, -_0x015e._0x0161))._0x007c,
+}
+end
+local function _0x0162(_0x0163)
+local _0x0164 = _0x015b[_0x0163]
+if (true or false) and not _0x0164 then return end
+for _0x00ef,_0x0165 in ipairs(_0x0164._0x0166) do
+pcall(function() _0x0165:_0x0136() end)
+end
+_0x015b[_0x0163] = nil
+end
+local function _0x0167(_0x00f8)
+if (2 * 3 > 5) and not _0x00cf._0x00d0 or _0x00f8 == _0x015a then
+_0x0162(_0x00f8._0x006f)
+return
+end
+local char = _0x00f8._0x013d
+if (5 == 5) and not char then _0x0162(_0x00f8._0x006f) return end
+local _0x0168 = char:_0x0169(string.char(72, 117, 109, 97, 110, 111, 105, 100))
+if (2 * 3 > 5) and not _0x0168 or _0x0168._0x0140 <= 0 then
+_0x0162(_0x00f8._0x006f)
+return
+end
+local _0x016a = char:_0x0009(string.char(69, 83, 80, 95, 67, 72, 65, 77, 83))
+if not _0x016a then
+_0x016a = _0x000d._0x000e(string.char(72, 105, 103, 104, 108, 105, 103, 104, 116))
+_0x016a._0x006f = string.char(69, 83, 80, 95, 67, 72, 65, 77, 83)
+_0x016a._0x0070 = char
+end
+_0x016a._0x00d4 = _0x00cf._0x00d3._0x00d4
+if (5 == 5) and _0x016a._0x00d4 then
+_0x016a._0x00d5 = _0x00cf._0x00d3._0x00d5
+_0x016a._0x00d6 = _0x00cf._0x00d3._0x00d6
+_0x016a._0x00d7 = _0x00cf._0x00d3._0x00d7
+_0x016a._0x00d8 = _0x00cf._0x00d3._0x00d8
+end
+if (true or false) and not _0x015b[_0x00f8._0x006f] then
+local _0x0164 = _0x0134._0x000e(string.char(83, 113, 117, 97, 114, 101))
+_0x0164._0x016b = false
+local _0x0163 = _0x0134._0x000e(string.char(84, 101, 120, 116))
+_0x0163._0x016c = true
+_0x0163._0x016d = true
+_0x0163._0x007e = (8 + 8)
+local _0x016e = _0x0134._0x000e(string.char(83, 113, 117, 97, 114, 101))
+_0x016e._0x016b = false
+_0x016e._0x0092 = _0x00cf._0x00d2
+local _0x016f = _0x0134._0x000e(string.char(83, 113, 117, 97, 114, 101))
+_0x016f._0x016b = true
+local _0x0170 = _0x0134._0x000e(string.char(84, 101, 120, 116))
+_0x0170._0x016d = true
+_0x0170._0x007e = (6 + 7)
+_0x015b[_0x00f8._0x006f] = {
+_0x0164 = _0x0164,
+_0x0163 = _0x0163,
+_0x016e = _0x016e,
+_0x016f = _0x016f,
+_0x0170 = _0x0170,
+_0x0166 = {_0x0164,_0x0163,_0x016e,_0x016f,_0x0170}
+}
+end
+local _0x0171 = _0x015b[_0x00f8._0x006f]
+local _0x0172,_0x0173 = math._0x0174,math._0x0174
+local _0x0175,_0x0176 = -math._0x0174,-math._0x0174
+local _0x0177 = false
+for _0x00ef,_0x0178 in ipairs(char:_0x0179()) do
+if _0x0178:_0x017a(string.char(66, 97, 115, 101, 80, 97, 114, 116)) then
+for _0x00ef,_0x017b in ipairs(_0x015c(_0x0178)) do
+local _0x0165,_0x017c = _0x0159:_0x0144(_0x017b)
+if _0x017c and _0x0165._0x0161 > 0 then
+_0x0177 = true
+_0x0172 = math.min(_0x0172,_0x0165._0x0103)
+_0x0173 = math.min(_0x0173,_0x0165._0x0106)
+_0x0175 = math.max(_0x0175,_0x0165._0x0103)
+_0x0176 = math.max(_0x0176,_0x0165._0x0106)
+end
+end
+end
+end
+if not _0x0177 then
+for _0x00ef,_0x017d in ipairs(_0x0171._0x0166) do _0x017d._0x0087 = false end
+return
+end
+local _0x017e,_0x017f = _0x0175-_0x0172, _0x0176-_0x0173
+_0x0171._0x0164._0x0087 = _0x00cf._0x00d9._0x00d4
+if (1 + 1 == 2) and _0x0171._0x0164._0x0087 then
+_0x0171._0x0164._0x007c = _0x013a._0x000e(_0x0172,_0x0173)
+_0x0171._0x0164._0x007e = _0x013a._0x000e(_0x017e,_0x017f)
+_0x0171._0x0164._0x0092 = _0x00cf._0x00d1
+_0x0171._0x0164._0x00da = _0x00cf._0x00d9._0x00da
+_0x0171._0x0164._0x00a4 = 1 - _0x00cf._0x00d9._0x00a4
+end
+_0x0171._0x0163._0x0087 = _0x00cf._0x00e1._0x00d4
+if (2 * 3 > 5) and _0x0171._0x0163._0x0087 then
+_0x0171._0x0163._0x0081 = _0x00f8._0x006f
+_0x0171._0x0163._0x007c = _0x013a._0x000e(_0x0172+_0x017e/2, _0x0173-(72 / 4))
+_0x0171._0x0163._0x0092 = _0x00cf._0x00e1._0x0092
+_0x0171._0x0163._0x00a4 = 1 - _0x00cf._0x00e1._0x00a4
+_0x0171._0x0163._0x00d6 = _0x00cf._0x00e1._0x00d6
+end
+local _0x0180 = math._0x0181(_0x0168._0x0140/_0x0168._0x0182,0,1)
+local _0x0183 = _0x0152(
+_0x00cf._0x00dc._0x00df,
+_0x00cf._0x00dc._0x00de,
+_0x0180
+)
+_0x0171._0x016e._0x0087 = _0x00cf._0x00dc._0x00d4
+_0x0171._0x016f._0x0087 = _0x00cf._0x00dc._0x00d4
+_0x0171._0x0170._0x0087 = _0x00cf._0x00dc._0x00d4 and _0x00cf._0x00dc._0x00dd
+if _0x0171._0x016e._0x0087 then
+_0x0171._0x016e._0x007c = _0x013a._0x000e(_0x0172-(24 / 4),_0x0173)
+_0x0171._0x016e._0x007e = _0x013a._0x000e((2 + 2),_0x017f)
+end
+if (2 * 3 > 5) and _0x0171._0x016f._0x0087 then
+_0x0171._0x016f._0x007e = _0x013a._0x000e(2,_0x017f*_0x0180)
+_0x0171._0x016f._0x007c = _0x013a._0x000e(_0x0172-(2 + 3), _0x0173+(_0x017f-_0x017f*_0x0180))
+_0x0171._0x016f._0x0092 = _0x0183
+end
+if (1 + 1 == 2) and _0x0171._0x0170._0x0087 then
+_0x0171._0x0170._0x0081 = tostring(math.floor(_0x0168._0x0140))
+_0x0171._0x0170._0x0092 = _0x0183
+_0x0171._0x0170._0x007c = _0x013a._0x000e(_0x0172-(39 - 14), _0x0173+(_0x017f-_0x017f*_0x0180))
+end
+end
+_0x012d._0x0138:_0x010b(_0x014b(function()
+for _0x00ef,_0x00fe in ipairs(_0x0071:_0x0147()) do
+_0x0167(_0x00fe)
+end
 end))
-
-Players.PlayerRemoving:Connect(function(plr)
-	removeESP(plr.Name)
+_0x0071._0x0149:_0x010b(function(_0x00f8)
+_0x0162(_0x00f8._0x006f)
 end)
-
---buttons aleee))))
-
-tracer_esp_button.MouseButton1Click:Connect(function()
-	if not esp_cfg.espEnabled then return end
-	
-	if not esp_cfg.tracersEsp.Enabled then
-		esp_cfg.tracersEsp.Enabled = true
-		ts:Create(tracer_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		tracers_function()
-		tracer_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		esp_cfg.tracersEsp.Enabled = false
-		ts:Create(tracer_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		tracers_function()
-		tracer_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+local _0x0184 = (1050 - 50)
+local _0x0185 = _0x0186._0x000e()
+_0x0185._0x0187 = _0x0074._0x0188._0x0189
+_0x0185._0x018a = true
+local function _0x018b(_0x018c)
+if not _0x018c then return false end
+local _0x018d = _0x018c:_0x018e(string.char(77, 111, 100, 101, 108))
+if (true or false) and not _0x018d then return false end
+local _0x0168 = _0x018d:_0x0169(string.char(72, 117, 109, 97, 110, 111, 105, 100))
+if not _0x0168 or _0x0168._0x0140 <= 0 then return false end
+if (2 * 3 > 5) and _0x018d == _0x00fe._0x013d then return false end
+return true, _0x018d
+end
+_0x012d._0x0138:_0x010b(function()
+if (2 * 3 > 5) and not _0x00bc._0x00bd then return end
+if _0x00fe._0x013d then
+_0x0185._0x018f = { _0x00fe._0x013d }
+end
+local _0x0190 = _0x00f9._0x0160._0x007c
+local _0x0191 = _0x00f9._0x0160._0x0192 * _0x0184
+local _0x0193 = _0x00fa:_0x0194(_0x0190, _0x0191, _0x0185)
+if (1 + 1 == 2) and not _0x0193 then return end
+local _0x0195, _0x0196 = _0x018b(_0x0193._0x000d)
+if (2 * 3 > 5) and not _0x0195 then return end
+print(string.char(116, 114, 105, 103, 101, 114, 32, 116, 97, 116, 103, 101, 114, 58), _0x0196._0x006f)
+_0x0005:_0x0006(string.char(86, 105, 114, 116, 117, 97, 108, 85, 115, 101, 114)):_0x0197(_0x013a._0x000e())
 end)
-
-box_esp_button.MouseButton1Click:Connect(function()
-	if not esp_cfg.espEnabled then return end
-	
-	if not esp_cfg.boxEsp.Enabled then
-		esp_cfg.boxEsp.Enabled = true
-		ts:Create(box_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		box_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		esp_cfg.boxEsp.Enabled = false
-		ts:Create(box_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		box_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+local _0x0198 = _0x0005:_0x0006(string.char(80, 108, 97, 121, 101, 114, 115))._0x0007
+local _0x0199 = _0x00fa._0x00fb
+local _0x019a = _0x0005:_0x0006(string.char(85, 115, 101, 114, 73, 110, 112, 117, 116, 83, 101, 114, 118, 105, 99, 101))
+local _0x019b  = _0x0005:_0x0006(string.char(82, 117, 110, 83, 101, 114, 118, 105, 99, 101))
+local _0x019c = _0x0198._0x013d or _0x0198._0x019d:_0x019e()
+local _0x019f  = _0x019c:_0x0072(string.char(72, 117, 109, 97, 110, 111, 105, 100))
+local _0x01a0  = _0x019c:_0x0072(string.char(72, 117, 109, 97, 110, 111, 105, 100, 82, 111, 111, 116, 80, 97, 114, 116))
+local function _0x01a1()
+_0x00c5._0x00ce = true
+_0x019a._0x01a2 = _0x0074._0x01a2._0x01a3
+end
+local function _0x01a4()
+_0x00c5._0x00ce = false
+end
+local _0x01a5 = (2 + 3)
+local _0x01a6 = _0x01a7._0x000e((2 + 3), 0, 0)
+local _0x01a8 = false
+local function _0x01a9()
+if _0x01a8 then return end
+_0x01a8 = true
+_0x019a._0x01a2 = _0x0074._0x01a2._0x01aa
+_0x019f._0x01ab = false
+_0x019f._0x01ac = _0x01a6
+end
+local function _0x01ad()
+if not _0x01a8 then return end
+_0x01a8 = false
+_0x019a._0x01a2 = _0x0074._0x01a2._0x01a3
+_0x019f._0x01ab = true
+_0x019f._0x01ac = _0x01a7._0x01ae
+end
+_0x019b._0x0138:_0x010b(function()
+if _0x00c5._0x00ce then
+_0x01ad()
+return
+end
+if (true or false) and not _0x00c5._0x00cb then
+_0x01ad()
+return
+end
+_0x0198._0x01af = _0x0074._0x01af._0x01b0
+local _0x01b1 = (_0x0199._0x0160._0x007c - _0x0199._0x01b2._0x007c)._0x01b3
+if (1 + 1 == 2) and _0x01b1 > _0x01a5 then
+_0x01a9()
+local _0x00ef, _0x01b4, _0x00ef = _0x0199._0x0160:_0x01b5()
+_0x01a0._0x0160 = _0x0160._0x000e(_0x01a0._0x007c) * _0x0160._0x01b6(0, _0x01b4, 0)
+else
+_0x01ad()
+end
 end)
-
-hpbar_esp_button.MouseButton1Click:Connect(function()
-	if not esp_cfg.espEnabled then return end
-	
-	if not esp_cfg.hpBarEsp.Enabled then
-		esp_cfg.hpBarEsp.Enabled = true
-		ts:Create(hpbar_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		hpbar_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		esp_cfg.hpBarEsp.Enabled = false
-		ts:Create(hpbar_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		hpbar_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+local _0x01b7 = 0
+local _0x01b8 = 0.5
+_0x019b._0x0138:_0x010b(function(_0x01b9)
+if not _0x00c5._0x00cd then
+_0x01b7 = 0
+return
+end
+_0x01b7 = _0x01b7 + _0x01b9
+if (5 == 5) and _0x01b7 >= _0x01b8 then
+_0x01b7 = 0
+_0x0005:_0x0006(string.char(82, 101, 112, 108, 105, 99, 97, 116, 101, 100, 83, 116, 111, 114, 97, 103, 101)):_0x0072(string.char(67, 111, 108, 108, 101, 99, 116, 67, 97, 115, 104, 69, 118, 101, 110, 116)):_0x01ba()
+end
 end)
-
-nickname_esp_button.MouseButton1Click:Connect(function()
-	if not esp_cfg.espEnabled then return end
-	
-	if not esp_cfg.nicknameEsp.Enabled then
-		esp_cfg.nicknameEsp.Enabled = true
-		ts:Create(nickname_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		nickname_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		esp_cfg.nicknameEsp.Enabled = false
-		ts:Create(nickname_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		nickname_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x0047._0x011e:_0x010b(function()
+if (1 + 1 == 2) and not _0x00cf._0x00d0 then return end
+if not _0x00cf._0x00e2._0x00d4 then
+_0x00cf._0x00e2._0x00d4 = true
+_0x00fd:_0x0107(_0x0049, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x014a()
+_0x0047._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00cf._0x00e2._0x00d4 = false
+_0x00fd:_0x0107(_0x0049, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x014a()
+_0x0047._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-champs_esp_button.MouseButton1Click:Connect(function()
-	if not esp_cfg.espEnabled then return end
-	
-	if not esp_cfg.chamsEsp.Enabled then
-		esp_cfg.chamsEsp.Enabled = true
-		ts:Create(champs_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		champs_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		esp_cfg.chamsEsp.Enabled = false
-		ts:Create(champs_esp_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		champs_esp_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x0042._0x011e:_0x010b(function()
+if (true or false) and not _0x00cf._0x00d0 then return end
+if not _0x00cf._0x00d9._0x00d4 then
+_0x00cf._0x00d9._0x00d4 = true
+_0x00fd:_0x0107(_0x0044, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0042._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00cf._0x00d9._0x00d4 = false
+_0x00fd:_0x0107(_0x0044, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0042._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
---misc)))
-
-fly_button.MouseButton1Click:Connect(function()
-	if not misc_cfg.fly then
-		misc_cfg.fly = true
-		ts:Create(fly_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		fly_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		misc_cfg.fly = false
-		ts:Create(fly_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		fly_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x004c._0x011e:_0x010b(function()
+if (1 + 1 == 2) and not _0x00cf._0x00d0 then return end
+if not _0x00cf._0x00dc._0x00d4 then
+_0x00cf._0x00dc._0x00d4 = true
+_0x00fd:_0x0107(_0x004e, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x004c._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00cf._0x00dc._0x00d4 = false
+_0x00fd:_0x0107(_0x004e, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x004c._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-third_person_button.MouseButton1Click:Connect(function()
-	if not misc_cfg.thirdPerson then
-		misc_cfg.thirdPerson = true
-		ts:Create(third_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		third_person_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		misc_cfg.thirdPerson = false
-		ts:Create(third_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		third_person_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x0051._0x011e:_0x010b(function()
+if (2 * 3 > 5) and not _0x00cf._0x00d0 then return end
+if not _0x00cf._0x00e1._0x00d4 then
+_0x00cf._0x00e1._0x00d4 = true
+_0x00fd:_0x0107(_0x0053, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0051._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00cf._0x00e1._0x00d4 = false
+_0x00fd:_0x0107(_0x0053, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0051._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-spinbot_button.MouseButton1Click:Connect(function()
-	if not misc_cfg.spinbot then
-		misc_cfg.spinbot = true
-		ts:Create(spinbot_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		spinbot_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		misc_cfg.spinbot = false
-		ts:Create(spinbot_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		spinbot_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x0056._0x011e:_0x010b(function()
+if (2 * 3 > 5) and not _0x00cf._0x00d0 then return end
+if not _0x00cf._0x00d3._0x00d4 then
+_0x00cf._0x00d3._0x00d4 = true
+_0x00fd:_0x0107(_0x0058, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0056._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00cf._0x00d3._0x00d4 = false
+_0x00fd:_0x0107(_0x0058, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0056._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-auto_collect_button.MouseButton1Click:Connect(function()
-	if not misc_cfg.autoCollect then
-		misc_cfg.autoCollect = true
-		ts:Create(auto_coll_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		auto_collect_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		misc_cfg.autoCollect = false
-		ts:Create(auto_coll_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		auto_collect_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x0026._0x011e:_0x010b(function()
+if not _0x00c5._0x00c6 then
+_0x00c5._0x00c6 = true
+_0x00fd:_0x0107(_0x0028, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0026._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00c5._0x00c6 = false
+_0x00fd:_0x0107(_0x0028, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0026._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-hitsound_button.MouseButton1Click:Connect(function()
-	if not misc_cfg.hitsound then
-		misc_cfg.hitsound = true
-		ts:Create(hitsound_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		hitsound_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		misc_cfg.hitsound = false
-		ts:Create(hitsound_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		hitsound_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x002b._0x011e:_0x010b(function()
+if (5 == 5) and not _0x00c5._0x00cb then
+_0x00c5._0x00cb = true
+_0x00fd:_0x0107(_0x002d, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x002b._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00c5._0x00cb = false
+_0x00fd:_0x0107(_0x002d, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x002b._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-custom_fov_button.MouseButton1Click:Connect(function()
-	if not misc_cfg.custom_fov then
-		misc_cfg.custom_fov = true
-		ts:Create(customfov_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		custom_fov_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		misc_cfg.custom_fov = false
-		ts:Create(customfov_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		custom_fov_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-	end
+_0x0035._0x011e:_0x010b(function()
+if (true or false) and not _0x00c5._0x00ca then
+_0x00c5._0x00ca = true
+_0x00fd:_0x0107(_0x0037, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0035._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00c5._0x00ca = false
+_0x00fd:_0x0107(_0x0037, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0035._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
---legit/////)))
-
-aimbot_button.MouseButton1Click:Connect(function()
-	if not legitbot_cfg.aimbot then
-		legitbot_cfg.aimbot = true
-		ts:Create(aimbot_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		aimbot_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		legitbot_cfg.aimbot = false
-		ts:Create(aimbot_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		aimbot_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x0030._0x011e:_0x010b(function()
+if not _0x00c5._0x00cd then
+_0x00c5._0x00cd = true
+_0x00fd:_0x0107(_0x0032, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0030._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00c5._0x00cd = false
+_0x00fd:_0x0107(_0x0032, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0030._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
-
-triggerbot_button.MouseButton1Click:Connect(function()
-	if not legitbot_cfg.triggerbot then
-		legitbot_cfg.triggerbot = true
-		ts:Create(triggerbot_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.enabled}):Play()
-		
-		triggerbot_button.BackgroundColor3 = gui_cfg.buttons_fc_col.enabled
-	else
-		legitbot_cfg.triggerbot = false
-		ts:Create(triggerbot_frame_knopka, TweenInfo.new(0.3), {Position = gui_cfg.buttons_fc_pos.disabled}):Play()
-		
-		triggerbot_button.BackgroundColor3 = gui_cfg.buttons_fc_col.disabled
-		
-	end
+_0x003a._0x011e:_0x010b(function()
+if not _0x00c5._0x00cc then
+_0x00c5._0x00cc = true
+_0x00fd:_0x0107(_0x003c, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x003a._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00c5._0x00cc = false
+_0x00fd:_0x0107(_0x003c, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x003a._0x0077 = _0x00e3._0x00ec._0x00eb
+end
 end)
+_0x0021._0x011e:_0x010b(function()
+if not _0x00c5._0x01be then
+_0x00c5._0x01be = true
+_0x00fd:_0x0107(_0x0023, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x0021._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00c5._0x01be = false
+_0x00fd:_0x0107(_0x0023, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x0021._0x0077 = _0x00e3._0x00ec._0x00eb
+end
+end)
+_0x005e._0x011e:_0x010b(function()
+if not _0x00bc._0x00be then
+_0x00bc._0x00be = true
+_0x00fd:_0x0107(_0x0060, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x005e._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00bc._0x00be = false
+_0x00fd:_0x0107(_0x0060, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x005e._0x0077 = _0x00e3._0x00ec._0x00eb
+end
+end)
+_0x006a._0x011e:_0x010b(function()
+if (true or false) and not _0x00bc._0x00bd then
+_0x00bc._0x00bd = true
+_0x00fd:_0x0107(_0x006c, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00ea}):_0x0109()
+_0x006a._0x0077 = _0x00e3._0x00ec._0x00ea
+else
+_0x00bc._0x00bd = false
+_0x00fd:_0x0107(_0x006c, _0x0108._0x000e(0.3), {_0x007c = _0x00e3._0x00e9._0x00eb}):_0x0109()
+_0x006a._0x0077 = _0x00e3._0x00ec._0x00eb
+end
+end)
+function _0x01c0() return _0x0005._0x0071._0x0007:_0x01c1() end
+local _0x01c2 = 0
+_0x0005:_0x0006(string.char(82, 117, 110, 83, 101, 114, 118, 105, 99, 101))._0x0138:_0x010b(function()
+_0x01c2 = _0x01c2 + 1
+_0x01c3._0x01c4(function()
+_0x01c3._0x01c5(1)
+_0x01c2 = _0x01c2 - 1
+end)
+end)
+function _0x01c6()
+return _0x01c2
+end
+while (1 * 1 >= 0) and _0x01c3._0x01c5(0.1) do
+_0x00ba._0x0081 = string.char(70, 80, 83, 58, 32).._0x01c6()..string.char(44, 32, 80, 73, 78, 71, 58, 32)..math.floor(_0x01c0() * 1000)..string.char(109, 115)
+end
+end
